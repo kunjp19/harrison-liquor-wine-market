@@ -6,10 +6,12 @@
   --wine: #7d1e35;
   --red: #b3362d;
   --green: #1f3f36;
+  --teal: #0d6c6a;
   --gold: #d7a548;
   --cream: #fffaf2;
   --line: rgba(26, 23, 19, 0.13);
   --shadow: 0 28px 80px rgba(26, 23, 19, 0.18);
+  --shadow-soft: 0 16px 46px rgba(26, 23, 19, 0.13);
 }
 
 * {
@@ -26,6 +28,7 @@ body {
   background: var(--paper);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
+  overflow-x: clip;
 }
 
 a {
@@ -38,6 +41,10 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+img.crop-lower {
+  object-position: center 74%;
 }
 
 svg {
@@ -62,6 +69,12 @@ svg {
   background: rgba(251, 247, 239, 0.9);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.topbar[data-scrolled="true"] {
+  background: rgba(255, 250, 242, 0.96);
+  box-shadow: 0 10px 30px rgba(26, 23, 19, 0.09);
 }
 
 .brand {
@@ -76,7 +89,7 @@ svg {
   height: 44px;
   place-items: center;
   color: #fff;
-  background: linear-gradient(135deg, var(--wine), var(--red));
+  background: linear-gradient(135deg, var(--wine), var(--teal));
   border-radius: 8px;
   font-weight: 950;
   letter-spacing: 0;
@@ -114,12 +127,18 @@ svg {
   color: #fff;
   background: var(--green);
   border-radius: 8px;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.icon-button:hover {
+  background: var(--wine);
+  transform: translateY(-1px);
 }
 
 .hero {
   position: relative;
   display: grid;
-  min-height: calc(100svh - 72px);
+  min-height: min(820px, calc(100svh - 72px));
   overflow: hidden;
   background: #15120f;
 }
@@ -128,8 +147,9 @@ svg {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(15, 12, 9, 0.88), rgba(15, 12, 9, 0.54) 45%, rgba(15, 12, 9, 0.12)),
-    url("assets/photos/coolers.jpg") center / cover;
+    radial-gradient(circle at 82% 18%, rgba(215, 165, 72, 0.28), transparent 27%),
+    linear-gradient(90deg, rgba(15, 12, 9, 0.9), rgba(15, 12, 9, 0.56) 48%, rgba(15, 12, 9, 0.1)),
+    url("assets/photos/coolers.jpg") center 70% / cover;
   transform: scale(1.01);
 }
 
@@ -227,6 +247,24 @@ h3 {
   font-size: clamp(1.06rem, 1.5vw, 1.35rem);
 }
 
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-pills span {
+  padding: 8px 12px;
+  color: #fff8df;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 850;
+  backdrop-filter: blur(14px);
+}
+
 .hero-actions,
 .cta-actions {
   display: flex;
@@ -245,6 +283,12 @@ h3 {
   border: 1px solid transparent;
   border-radius: 8px;
   font-weight: 950;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(26, 23, 19, 0.18);
 }
 
 .button.primary {
@@ -272,17 +316,82 @@ h3 {
 }
 
 .intro > p,
+.section-head > p,
+.reel-copy > p,
 .visit-copy > p,
 .cta p {
   color: var(--muted);
   font-size: 1.04rem;
 }
 
+.section-head > p {
+  width: min(440px, 100%);
+  margin-bottom: 0;
+}
+
+.reel-section {
+  display: grid;
+  grid-template-columns: minmax(290px, 0.64fr) minmax(0, 1.36fr);
+  gap: clamp(28px, 5vw, 72px);
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 0 0 clamp(58px, 9vw, 112px);
+  align-items: center;
+}
+
+.reel-copy h2 {
+  max-width: 12ch;
+}
+
+.reel-copy > p {
+  max-width: 440px;
+}
+
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.reel-card {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  overflow: hidden;
+  background: #15120f;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.reel-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reel-card span {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  padding: 10px 12px;
+  color: #fff;
+  background: rgba(15, 12, 9, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 900;
+  backdrop-filter: blur(12px);
+}
+
 .product-band {
   display: grid;
   grid-template-columns: minmax(320px, 0.92fr) minmax(320px, 1.08fr);
-  min-height: 720px;
-  background: var(--green);
+  min-height: 700px;
+  background:
+    linear-gradient(135deg, rgba(125, 30, 53, 0.5), transparent 48%),
+    var(--green);
 }
 
 .product-band article {
@@ -337,6 +446,52 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.services {
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.service-grid article {
+  min-height: 180px;
+  padding: 24px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.service-grid article:nth-child(2) {
+  border-top-color: var(--gold);
+}
+
+.service-grid article:nth-child(3) {
+  border-top-color: var(--wine);
+}
+
+.service-grid article:nth-child(4) {
+  border-top-color: var(--red);
+}
+
+.service-grid strong,
+.service-grid span {
+  display: block;
+}
+
+.service-grid strong {
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+}
+
+.service-grid span {
+  color: var(--muted);
+}
+
 .section-head {
   display: flex;
   align-items: end;
@@ -352,13 +507,13 @@ h3 {
 
 .photo-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 16px;
 }
 
 figure {
   position: relative;
-  min-height: 360px;
+  min-height: 330px;
   margin-bottom: 0;
   overflow: hidden;
   background: #15120f;
@@ -368,7 +523,7 @@ figure {
 
 figure.wide {
   grid-row: span 2;
-  min-height: 736px;
+  min-height: 676px;
 }
 
 figcaption {
@@ -422,9 +577,20 @@ figcaption {
 .hours-panel {
   padding: 28px;
   color: #fff;
-  background: var(--wine);
+  background:
+    linear-gradient(145deg, rgba(13, 108, 106, 0.36), transparent 54%),
+    var(--wine);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.hours-logo {
+  height: auto;
+  max-height: 146px;
+  margin-bottom: 22px;
+  object-fit: contain;
+  background: rgba(255, 250, 242, 0.92);
+  border-radius: 8px;
 }
 
 .hours-panel h3 {
@@ -461,7 +627,9 @@ td {
   gap: 26px;
   padding: clamp(42px, 6vw, 70px) clamp(18px, 6vw, 80px);
   color: #fff;
-  background: linear-gradient(135deg, var(--wine), var(--red));
+  background:
+    linear-gradient(135deg, rgba(125, 30, 53, 0.92), rgba(179, 54, 45, 0.82)),
+    url("assets/photos/aisle.jpg") center / cover;
 }
 
 .cta .eyebrow {
@@ -478,7 +646,7 @@ td {
 
 .cta p {
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.84);
 }
 
 footer {
@@ -512,8 +680,9 @@ footer p {
 
   .hero-media {
     background:
-      linear-gradient(180deg, rgba(15, 12, 9, 0.28), rgba(15, 12, 9, 0.92)),
-      url("assets/photos/coolers.jpg") center / cover;
+      radial-gradient(circle at 70% 10%, rgba(215, 165, 72, 0.22), transparent 28%),
+      linear-gradient(180deg, rgba(15, 12, 9, 0.3), rgba(15, 12, 9, 0.92)),
+      url("assets/photos/coolers.jpg") center 68% / cover;
   }
 
   .hero-content {
@@ -523,6 +692,7 @@ footer p {
 
   .hero-info,
   .intro,
+  .reel-section,
   .product-band,
   .visit,
   .cta {
@@ -547,8 +717,22 @@ footer p {
     min-height: 0;
   }
 
+  .reel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  .reel-card,
+  .reel-card.tall {
+    min-height: 0;
+  }
+
   .product-band article {
     min-height: 520px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .section-head,
@@ -564,6 +748,10 @@ footer p {
   figure.wide {
     min-height: 420px;
     grid-row: auto;
+  }
+
+  img.crop-lower {
+    object-position: center 68%;
   }
 }
 
@@ -593,6 +781,20 @@ footer p {
 
   .category-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reel-card,
+  .reel-card.tall {
+    aspect-ratio: 16 / 11;
+    min-height: 0;
   }
 
   .product-band article {
