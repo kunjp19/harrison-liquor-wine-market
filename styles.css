@@ -527,15 +527,6 @@ figcaption {
   box-shadow: var(--shadow);
 }
 
-.hours-logo {
-  height: auto;
-  max-height: 146px;
-  margin-bottom: 22px;
-  object-fit: contain;
-  background: rgba(255, 250, 242, 0.92);
-  border-radius: 8px;
-}
-
 .hours-panel h3 {
   margin-bottom: 18px;
 }
