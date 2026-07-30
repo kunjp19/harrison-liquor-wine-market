@@ -2,6 +2,8 @@
 
 Static business website for Harrison Liquor & Wine Market in Lincoln Park, Michigan.
 
+The project includes optimized storefront photos in `assets/photos/` and the untouched originals in `assets/originals/`.
+
 ## Local preview
 
 ```bash
