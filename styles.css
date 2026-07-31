@@ -251,10 +251,7 @@ p {
 
 .hero-card {
   align-self: end;
-  display: grid;
-  grid-template-columns: 86px 1fr;
-  gap: 16px;
-  align-items: center;
+  display: block;
   padding: 18px;
   color: var(--ink);
   background: rgba(255, 250, 240, 0.94);
@@ -262,12 +259,6 @@ p {
   border-radius: 8px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(16px);
-}
-
-.hero-card img {
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
 }
 
 .hero-card span,
@@ -552,16 +543,16 @@ figcaption {
 
 .basket-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 
 .basket-grid article {
-  min-height: 220px;
+  min-height: 350px;
   display: grid;
   align-content: space-between;
-  gap: 18px;
-  padding: 24px;
+  gap: 14px;
+  padding: 12px;
   border-top: 5px solid var(--green);
 }
 
@@ -571,6 +562,20 @@ figcaption {
 
 .basket-grid article:nth-child(3) {
   border-top-color: var(--brass);
+}
+
+.basket-grid article:nth-child(4) {
+  border-top-color: var(--brick);
+}
+
+.basket-grid img {
+  height: 178px;
+  border-radius: 6px;
+}
+
+.basket-grid h3,
+.basket-grid p {
+  padding: 0 10px;
 }
 
 .basket-grid a {
@@ -848,13 +853,7 @@ footer p {
   }
 
   .hero-card {
-    grid-template-columns: 64px 1fr;
     padding: 14px;
-  }
-
-  .hero-card img {
-    width: 64px;
-    height: 64px;
   }
 
   .hero-actions,
