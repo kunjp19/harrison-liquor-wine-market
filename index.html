@@ -29,6 +29,7 @@
         <a href="#selection">Selection</a>
         <a href="#services">Services</a>
         <a href="#gallery">Photos</a>
+        <a href="#hours">Hours</a>
         <a href="#visit">Visit</a>
       </nav>
       <a class="icon-button" href="tel:+13133893759" aria-label="Call Harrison Liquor & Wine Market" title="Call">
@@ -66,17 +67,60 @@
         </div>
       </section>
 
+      <section class="quick-panel" aria-label="Quick store guide">
+        <div class="quick-tabs" role="tablist" aria-label="Quick guide sections">
+          <button class="quick-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="quick-shop" id="tab-shop" data-tab="shop">Shop</button>
+          <button class="quick-tab" type="button" role="tab" aria-selected="false" aria-controls="quick-hours" id="tab-hours" data-tab="hours">Hours</button>
+          <button class="quick-tab" type="button" role="tab" aria-selected="false" aria-controls="quick-photos" id="tab-photos" data-tab="photos">Photos</button>
+        </div>
+        <div class="quick-card is-active" id="quick-shop" role="tabpanel" aria-labelledby="tab-shop" data-panel="shop">
+          <div>
+            <p class="eyebrow">Fast answer</p>
+            <h2>What can I get here?</h2>
+          </div>
+          <div class="quick-grid">
+            <span>Liquor</span>
+            <span>Wine</span>
+            <span>Cold beer</span>
+            <span>Mixers</span>
+            <span>Snacks</span>
+            <span>Lottery</span>
+          </div>
+        </div>
+        <div class="quick-card" id="quick-hours" role="tabpanel" aria-labelledby="tab-hours" data-panel="hours" hidden>
+          <div>
+            <p class="eyebrow">Open today</p>
+            <h2>Simple weekly hours.</h2>
+          </div>
+          <div class="quick-hours">
+            <p><strong>Sunday-Thursday</strong><span>10:00 AM-10:00 PM</span></p>
+            <p><strong>Friday-Saturday</strong><span>10:00 AM-11:00 PM</span></p>
+          </div>
+        </div>
+        <div class="quick-card" id="quick-photos" role="tabpanel" aria-labelledby="tab-photos" data-panel="photos" hidden>
+          <div>
+            <p class="eyebrow">Real store view</p>
+            <h2>See the shelves before you stop in.</h2>
+          </div>
+          <div class="quick-photo-strip" aria-label="Store photos">
+            <img src="assets/photos/aisle-selection.jpg" alt="Store aisle with liquor, snacks, and checkout shelves">
+            <img src="assets/photos/coolers.jpg" alt="Cold beer coolers and convenience shelves">
+            <img src="assets/photos/storefront-street.jpg" alt="Harrison Liquor storefront on Harrison Boulevard">
+          </div>
+        </div>
+      </section>
+
       <section class="section intro" aria-label="Store overview">
         <div>
           <p class="eyebrow">Local, stocked, convenient</p>
           <h2>Built for quick stops and weekend runs.</h2>
         </div>
-        <p>Harrison Liquor & Wine Market keeps the shelves packed for everyday pickups, game-day plans, and last-minute hosting. Browse the spirits wall, check the coolers, pick up mixers, snacks, groceries, or call the store before heading over for a specific bottle.</p>
+        <p>Harrison Liquor & Wine Market keeps the shelves packed for everyday pickups, game-day plans, and last-minute hosting. Use the quick guide above for the essentials, then jump straight to selection, photos, or directions.</p>
       </section>
 
       <section class="product-band" id="selection" aria-label="Product categories">
         <article>
-          <img src="assets/photos/spirits-detail.jpg" alt="Shelves of liquor bottles inside Harrison Liquor & Wine Market" loading="lazy">
+          <img src="assets/photos/spirits-detail.jpg" alt="Shelves of liquor bottles inside Harrison Liquor & Wine Market">
         </article>
         <div class="product-copy">
           <p class="eyebrow">What you can shop</p>
@@ -126,21 +170,21 @@
           </div>
           <p>Photos from the store show the practical range: packed aisles, cooler doors, spirits shelves, snacks, and checkout essentials.</p>
         </div>
-        <div class="photo-grid">
+        <div class="photo-grid" aria-label="Scrollable store photo gallery">
           <figure class="wide">
-            <img src="assets/photos/aisle-selection.jpg" alt="Wide view of liquor shelves and snack aisles inside Harrison Liquor & Wine Market" loading="lazy">
+            <img src="assets/photos/aisle-selection.jpg" alt="Wide view of liquor shelves and snack aisles inside Harrison Liquor & Wine Market">
             <figcaption>Full liquor wall, candy, snacks, and quick checkout area.</figcaption>
           </figure>
           <figure>
-            <img class="crop-lower" src="assets/photos/coolers.jpg" alt="Cold beer coolers and store aisles at Harrison Liquor & Wine Market" loading="lazy">
+            <img class="crop-lower" src="assets/photos/coolers.jpg" alt="Cold beer coolers and store aisles at Harrison Liquor & Wine Market">
             <figcaption>Cold drinks, beer coolers, lottery, and convenience shelves.</figcaption>
           </figure>
           <figure>
-            <img class="crop-lower" src="assets/photos/checkout.jpg" alt="Counter shelves and spirits selection inside Harrison Liquor & Wine Market" loading="lazy">
+            <img class="crop-lower" src="assets/photos/checkout.jpg" alt="Counter shelves and spirits selection inside Harrison Liquor & Wine Market">
             <figcaption>Mixers, candy, wine, bottles, and checkout items near the counter.</figcaption>
           </figure>
           <figure>
-            <img src="assets/photos/storefront-street.jpg" alt="Exterior storefront for Harrison Liquor & Wine Market on Harrison Boulevard" loading="lazy">
+            <img src="assets/photos/storefront-street.jpg" alt="Exterior storefront for Harrison Liquor & Wine Market on Harrison Boulevard">
             <figcaption>Easy neighborhood stop on Harrison Boulevard in Lincoln Park.</figcaption>
           </figure>
         </div>
@@ -154,11 +198,10 @@
           <div class="detail-list">
             <p><strong>Phone</strong><a href="tel:+13133893759">(313) 389-3759</a></p>
             <p><strong>Directions</strong><a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Open in Google Maps</a></p>
-            <p><strong>Social</strong><a href="https://www.facebook.com/sipandshopusa" target="_blank" rel="noopener">Facebook page</a></p>
           </div>
         </div>
-        <div class="hours-panel" aria-label="Hours">
-          <img src="assets/photos/harrison-logo.jpg" alt="Harrison Wine, Liquor & Market logo" class="hours-logo" loading="lazy">
+        <div class="hours-panel" id="hours" aria-label="Hours">
+          <img src="assets/photos/harrison-logo.jpg" alt="Harrison Wine, Liquor & Market logo" class="hours-logo">
           <h3>Regular hours</h3>
           <table>
             <tbody>
@@ -187,6 +230,12 @@
       <p>Harrison Liquor & Wine Market | 735 Harrison Blvd, Lincoln Park, MI 48146</p>
       <p>Enjoy responsibly. Alcohol sales are for customers 21+ with valid ID.</p>
     </footer>
+
+    <div class="mobile-actions" aria-label="Quick mobile actions">
+      <a href="tel:+13133893759">Call</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
+      <a href="#hours">Hours</a>
+    </div>
 
     <script src="script.js" defer></script>
   </body>

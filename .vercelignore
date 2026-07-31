@@ -1,0 +1,15 @@
+.DS_Store
+.git
+.gitignore
+README.md
+assets/.DS_Store
+assets/originals
+assets/*.DNG
+assets/*.HEIC
+assets/*.JPG
+assets/*.PNG
+assets/*.jpg
+assets/*.mov
+assets/*.MP4
+assets/photos/storefront.jpg
+assets/photos/storefront-upright.jpg
