@@ -162,7 +162,7 @@ svg {
   background:
     linear-gradient(90deg, rgba(15, 24, 21, 0.96) 0, rgba(15, 24, 21, 0.8) 38%, rgba(15, 24, 21, 0.18) 100%),
     linear-gradient(0deg, rgba(15, 24, 21, 0.72), rgba(15, 24, 21, 0.08) 45%),
-    url("assets/photos/coolers.jpg") center 68% / cover;
+    url("assets/photos/brand-hero.jpg") center 58% / cover;
   transform: scale(1.02);
 }
 
@@ -707,7 +707,7 @@ footer p {
   .hero-bg {
     background:
       linear-gradient(0deg, rgba(15, 24, 21, 0.96), rgba(15, 24, 21, 0.44) 56%, rgba(15, 24, 21, 0.18)),
-      url("assets/photos/coolers.jpg") center 68% / cover;
+      url("assets/photos/brand-hero.jpg") center 58% / cover;
   }
 
   .hero-inner {
