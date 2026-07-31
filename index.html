@@ -28,6 +28,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#shop">Shop</a>
         <a href="#photos">Photos</a>
+        <a href="#requests">Requests</a>
         <a href="#hours">Hours</a>
         <a href="#visit">Visit</a>
       </nav>
@@ -81,6 +82,11 @@
           <span>03</span>
           <strong>Get there fast</strong>
           <small>Call or open directions</small>
+        </a>
+        <a href="#requests">
+          <span>04</span>
+          <strong>Request an item</strong>
+          <small>Ask about stock or send feedback</small>
         </a>
       </section>
 
@@ -147,6 +153,73 @@
             <img src="assets/photos/brand-storefront.jpg" alt="Clean crop of Harrison Liquor storefront on Harrison Boulevard">
             <figcaption>Neighborhood stop on Harrison Boulevard.</figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section class="request-section" id="requests" aria-label="Requests and feedback">
+        <div class="section-title">
+          <p class="eyebrow">Requests and feedback</p>
+          <h2>Ask about a bottle or send a quick note.</h2>
+        </div>
+        <div class="request-grid">
+          <form class="request-form" data-message-kind="Collection request">
+            <div>
+              <p class="form-label">Collection request</p>
+              <h3>Looking for something specific?</h3>
+              <p>Request a bottle, case, mixer, keg, or product you would like the store to check.</p>
+            </div>
+            <label>
+              Product or brand
+              <input name="Product or brand" type="text" autocomplete="off" placeholder="Example: Casamigos Blanco, 12-pack Modelo" required>
+            </label>
+            <label>
+              Details
+              <textarea name="Details" rows="4" placeholder="Size, quantity, flavor, pickup timing, or anything helpful"></textarea>
+            </label>
+            <label>
+              Your name
+              <input name="Name" type="text" autocomplete="name" placeholder="Name">
+            </label>
+            <label>
+              Phone number
+              <input name="Phone" type="tel" autocomplete="tel" placeholder="Best number to reply">
+            </label>
+            <button class="button primary" type="submit">Text request</button>
+            <output class="form-status" aria-live="polite"></output>
+          </form>
+
+          <form class="request-form feedback-form" data-message-kind="Customer feedback">
+            <div>
+              <p class="form-label">Feedback</p>
+              <h3>Tell us how the store can improve.</h3>
+              <p>Share a product suggestion, service note, shelf request, or general feedback.</p>
+            </div>
+            <label>
+              Feedback type
+              <select name="Feedback type" required>
+                <option value="">Choose one</option>
+                <option>Product suggestion</option>
+                <option>Customer service</option>
+                <option>Store selection</option>
+                <option>Website feedback</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="Message" rows="5" placeholder="Write your note here" required></textarea>
+            </label>
+            <label>
+              Your name
+              <input name="Name" type="text" autocomplete="name" placeholder="Name">
+            </label>
+            <label>
+              Phone number
+              <input name="Phone" type="tel" autocomplete="tel" placeholder="Best number to reply">
+            </label>
+            <button class="button primary" type="submit">Text feedback</button>
+            <output class="form-status" aria-live="polite"></output>
+          </form>
         </div>
       </section>
 
