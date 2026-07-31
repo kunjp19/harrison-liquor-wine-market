@@ -541,6 +541,13 @@ figcaption {
   margin-bottom: 0;
 }
 
+.section-note {
+  max-width: 760px;
+  margin: -6px 0 24px;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
 .basket-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
