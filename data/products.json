@@ -1,22 +1,22 @@
 [
   {
     "name": "Counter Bottle Requests",
-    "category": "Premium & rare",
+    "category": "Liquor and premium",
     "description": "Use the request form for a specific brand, bottle size, flavor, or gift idea.",
     "image": "assets/photos/optimized/reel-counter-bottle-lineup-720.webp",
     "alt": "Premium bottles displayed on the Harrison counter"
   },
   {
-    "name": "Wine Hosting Ideas",
-    "category": "New arrivals",
-    "description": "Ask what wine and add-on items are available for a small dinner, gift, or gathering.",
-    "image": "assets/photos/optimized/reel-wine-party-spread-720.webp",
-    "alt": "Wine bottles and food-style add-ons arranged on the counter"
+    "name": "Tobacco and Vape Requests",
+    "category": "Adult-only products",
+    "description": "Ask about cigarette, tobacco, vape, and accessory categories. Products require applicable legal age and valid ID.",
+    "image": "assets/photos/optimized/brand-convenience-720.webp",
+    "alt": "Convenience shelves inside Harrison Liquor and Wine Market"
   },
   {
-    "name": "Quick Basket Add-Ons",
-    "category": "Everyday pickup",
-    "description": "Cold drinks, chips, candy, soda, and other practical extras for a quick stop.",
+    "name": "Grocery and Quick Basket Add-Ons",
+    "category": "Grocery and convenience",
+    "description": "Cold drinks, chips, candy, soda, grocery basics, and other practical extras for a quick stop.",
     "image": "assets/photos/optimized/reel-quick-basket-picks-720.webp",
     "alt": "Quick pickup basket with drinks and snacks"
   }

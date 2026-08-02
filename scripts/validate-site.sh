@@ -11,7 +11,7 @@ for file in index.html styles.css script.js data/*.json; do
   esac
 done
 
-missing_assets=$(grep -Eoh 'assets/[^" )]+' index.html styles.css | sort -u | while read -r asset; do
+missing_assets=$(grep -Eoh 'assets/[^" )]+' *.html styles.css 2>/dev/null | sed 's/^[^:]*://' | sort -u | while read -r asset; do
   [ -f "$asset" ] || echo "$asset"
 done)
 

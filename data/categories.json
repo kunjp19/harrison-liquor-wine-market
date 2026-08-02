@@ -1,26 +1,32 @@
 [
   {
-    "name": "Bourbon & Whiskey",
-    "description": "Ask about everyday bottles, giftable picks, and higher-end selections.",
+    "name": "Liquor, Wine & Beer",
+    "description": "Browse spirits, wine, beer, ready-to-drink beverages, mixers, and giftable bottle requests.",
     "image": "assets/photos/optimized/reel-counter-bottle-lineup-720.webp",
     "alt": "Bottle lineup on the Harrison counter"
   },
   {
-    "name": "Tequila & Mixers",
-    "description": "Pair tequila requests with mixer, citrus, soda, juice, and snack add-ons.",
-    "image": "assets/photos/optimized/reel-tequila-margarita-mix-720.webp",
-    "alt": "Margarita mix, limes, and glasses on the counter"
+    "name": "Tobacco & Vape",
+    "description": "Cigarettes, tobacco products, vapes, accessories, and related adult-only categories. Availability varies.",
+    "image": "assets/photos/optimized/brand-convenience-720.webp",
+    "alt": "Convenience shelves inside Harrison Liquor and Wine Market"
   },
   {
-    "name": "Wine & Hosting",
-    "description": "Plan a simple wine stop with sweets, candy, snacks, or small gathering extras.",
-    "image": "assets/photos/optimized/reel-wine-party-spread-720.webp",
-    "alt": "Wine and hosting items arranged on the Harrison counter"
+    "name": "Grocery & Convenience",
+    "description": "Snacks, candy, soft drinks, energy drinks, grocery basics, lottery, and everyday convenience items.",
+    "image": "assets/photos/optimized/brand-coolers-720.webp",
+    "alt": "Counter and convenience items inside Harrison Liquor and Wine Market"
   },
   {
-    "name": "Beer, Drinks & Snacks",
-    "description": "Build a quick basket with cold drinks, chips, candy, and everyday pickup items.",
+    "name": "Mixers & Party Essentials",
+    "description": "Mixers, soda, juice, chips, candy, cups, ice questions, and add-ons for gatherings or quick stops.",
     "image": "assets/photos/optimized/reel-quick-basket-picks-720.webp",
-    "alt": "Shopping basket with chips, drinks, and quick pickup items"
+    "alt": "Basket with drinks, snacks, and quick pickup items"
+  },
+  {
+    "name": "Premium & Rare",
+    "description": "Ask about premium, allocated, collectible, gift-worthy, or special-occasion products.",
+    "image": "assets/photos/optimized/reel-counter-bottle-lineup-720.webp",
+    "alt": "Premium bottles displayed on the Harrison counter"
   }
 ]
