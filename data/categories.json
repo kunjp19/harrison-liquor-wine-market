@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bourbon & Whiskey",
+    "description": "Ask about everyday bottles, giftable picks, and higher-end selections.",
+    "image": "assets/photos/optimized/reel-counter-bottle-lineup-720.webp",
+    "alt": "Bottle lineup on the Harrison counter"
+  },
+  {
+    "name": "Tequila & Mixers",
+    "description": "Pair tequila requests with mixer, citrus, soda, juice, and snack add-ons.",
+    "image": "assets/photos/optimized/reel-tequila-margarita-mix-720.webp",
+    "alt": "Margarita mix, limes, and glasses on the counter"
+  },
+  {
+    "name": "Wine & Hosting",
+    "description": "Plan a simple wine stop with sweets, candy, snacks, or small gathering extras.",
+    "image": "assets/photos/optimized/reel-wine-party-spread-720.webp",
+    "alt": "Wine and hosting items arranged on the Harrison counter"
+  },
+  {
+    "name": "Beer, Drinks & Snacks",
+    "description": "Build a quick basket with cold drinks, chips, candy, and everyday pickup items.",
+    "image": "assets/photos/optimized/reel-quick-basket-picks-720.webp",
+    "alt": "Shopping basket with chips, drinks, and quick pickup items"
+  }
+]

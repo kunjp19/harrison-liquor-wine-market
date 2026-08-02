@@ -1,0 +1,18 @@
+{
+  "name": "Harrison Liquor & Wine Market",
+  "address": "735 Harrison Blvd, Lincoln Park, MI 48146",
+  "phone": "(313) 389-3759",
+  "phoneHref": "+13133893759",
+  "email": "maanriyupatel@gmail.com",
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146",
+  "hours": [
+    {
+      "days": "Sunday-Thursday",
+      "time": "10:00 AM-10:00 PM"
+    },
+    {
+      "days": "Friday-Saturday",
+      "time": "10:00 AM-11:00 PM"
+    }
+  ]
+}

@@ -15,8 +15,8 @@
     <meta property="og:image" content="https://harrison-liquor-wine-market.vercel.app/assets/photos/brand-hero.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://harrison-liquor-wine-market.vercel.app/">
-    <meta name="theme-color" content="#111816">
-    <link rel="preload" as="image" href="assets/photos/brand-hero.jpg">
+    <meta name="theme-color" content="#121715">
+    <link rel="preload" as="image" href="assets/photos/optimized/brand-hero-1200.webp" imagesrcset="assets/photos/optimized/brand-hero-720.webp 720w, assets/photos/optimized/brand-hero-1200.webp 1200w" imagesizes="100vw" type="image/webp">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
@@ -91,7 +91,7 @@
             "name": "Can customers request a product before visiting?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Customers can use the website request form to email the store about a bottle, case, mixer, keg question, snack, or grocery item."
+              "text": "Yes. Customers can use the website request form to email the store about a bottle, case, mixer, keg question, snack, grocery item, or feedback."
             }
           },
           {
@@ -107,20 +107,28 @@
     </script>
   </head>
   <body>
+    <aside class="announcement" aria-label="Store announcement">
+      <strong>Open daily at 10 AM.</strong>
+      <span>Call for current deals, bottles, cases, mixers, snacks, and availability.</span>
+    </aside>
+
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Harrison Liquor & Wine Market home">
-        <img src="assets/photos/harrison-logo.jpg" alt="" aria-hidden="true">
+        <img src="assets/photos/harrison-logo.jpg" width="720" height="720" alt="" aria-hidden="true">
         <span>
-          <strong>Harrison</strong>
-          <small>Liquor & Wine Market</small>
+          <strong>Harrison Liquor <span class="brand-extra">&amp; Wine Market</span></strong>
+          <small>Lincoln Park, MI</small>
         </span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#shop">Shop</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#deals">Deals</a>
+        <a href="#categories">Categories</a>
+        <a href="#arrivals">New Arrivals</a>
+        <a href="#premium">Premium</a>
         <a href="#request">Request</a>
-        <a href="#photos">Photos</a>
         <a href="#hours">Hours</a>
-        <a href="#visit">Visit</a>
       </nav>
       <a class="header-action" href="tel:+13133893759">Call</a>
     </header>
@@ -128,107 +136,189 @@
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Lincoln Park neighborhood market</p>
-          <h1 id="hero-title">Liquor, wine, cold beer, and quick essentials.</h1>
+          <p class="eyebrow">735 Harrison Blvd, Lincoln Park</p>
+          <h1 id="hero-title">Harrison Liquor & Wine Market</h1>
           <p>
-            Harrison Liquor & Wine Market is built for the fast stop: stocked bottle walls,
-            cold drink favorites, mixers, snacks, lottery, and everyday pickup items.
+            A local stop for liquor, wine, beer, mixers, candy, snacks, lottery, and everyday pickup items.
+            Browse what we carry, request a product, or call before you visit.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#request">Request a bottle</a>
-            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Get directions</a>
+            <a class="button primary" href="#deals">View deals</a>
+            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Store status">
+        <div class="hero-media" aria-label="Real views inside Harrison Liquor and Wine Market">
+          <img class="hero-media-main" src="assets/photos/optimized/brand-hero-1200.webp" width="1200" height="720" fetchpriority="high" decoding="async" alt="Counter view inside Harrison Liquor and Wine Market">
+          <img src="assets/photos/optimized/reel-quick-basket-picks-720.webp" width="720" height="467" decoding="async" alt="Basket with chips drinks and quick pick items">
+          <img src="assets/photos/optimized/reel-wine-party-spread-720.webp" width="720" height="405" decoding="async" alt="Wine bottles and pairing items on the Harrison counter">
+        </div>
+      </section>
+
+      <section class="quick-panel" aria-label="Quick customer actions">
+        <a href="tel:+13133893759">
+          <span>Call</span>
+          <strong>(313) 389-3759</strong>
+        </a>
+        <a href="#hours">
+          <span>Today</span>
+          <strong>Open from 10 AM</strong>
+        </a>
+        <a href="#request">
+          <span>Email</span>
+          <strong>Product request</strong>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">
+          <span>Map</span>
+          <strong>735 Harrison Blvd</strong>
+        </a>
+      </section>
+
+      <section class="deal-feature section-pad" id="deals" aria-labelledby="deals-title">
+        <div class="section-heading">
           <div>
-            <span>Open daily at 10 AM</span>
-            <strong>735 Harrison Blvd</strong>
-            <small>Lincoln Park, MI 48146</small>
+            <p class="eyebrow">Current deals</p>
+            <h2 id="deals-title">Featured in-store picks.</h2>
           </div>
-        </aside>
-      </section>
-
-      <section class="action-dock" aria-label="Quick customer actions">
-        <a href="tel:+13133893759"><span>Call</span><strong>(313) 389-3759</strong></a>
-        <a href="#request"><span>Email</span><strong>Product request</strong></a>
-        <a href="#hours"><span>Hours</span><strong>Sun-Thu 10-10</strong></a>
-        <a href="#visit"><span>Map</span><strong>Get directions</strong></a>
-      </section>
-
-      <section class="split-intro section-pad" id="shop">
-        <div>
-          <p class="eyebrow">Shop by need</p>
-          <h2>Make the stop easy.</h2>
+          <p>Promotions and availability change. Call or visit the store for exact pricing, sizes, and current selection.</p>
         </div>
-        <div class="mission-grid">
+        <div class="deal-grid" data-deals>
+          <article class="deal-card">
+            <img src="assets/photos/optimized/brand-coolers-720.webp" width="720" height="463" decoding="async" alt="Store counter and shelves inside Harrison Liquor and Wine Market">
+            <div>
+              <span>Weekly In-Store Features</span>
+              <h3>Rotating bottle and drink features</h3>
+              <p>Ask at the counter or call ahead for current in-store features and available sizes.</p>
+              <small>Selection, pricing, and availability may vary.</small>
+              <a class="text-link" href="tel:+13133893759">Call for today's deals</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category-section section-pad" id="categories" aria-labelledby="categories-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2 id="categories-title">Start with the main item. Add the rest.</h2>
+          </div>
+          <p>These categories are browsing guides, not live inventory. Request a specific brand if you want it checked before coming in.</p>
+        </div>
+        <div class="category-grid" data-categories>
+          <article class="category-card">
+            <img src="assets/photos/optimized/brand-coolers-1200.webp" width="1200" height="771" decoding="async" alt="Wide counter view with shelves coolers snacks and bottle displays inside Harrison">
+            <div>
+              <span>Store essentials</span>
+              <h3>Beer, Drinks & Snacks</h3>
+              <p>Build a quick basket with cold drinks, chips, candy, and everyday pickup items.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/photos/optimized/reel-counter-bottle-lineup-720.webp" width="720" height="840" decoding="async" alt="Counter bottle lineup with shelves behind it inside Harrison">
+            <div>
+              <span>Bottle check</span>
+              <h3>Bourbon & Whiskey</h3>
+              <p>Ask about everyday bottles, giftable picks, and higher-end selections.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/photos/optimized/reel-wine-party-spread-720.webp" width="720" height="405" decoding="async" alt="Wine bottles glasses fruit crackers and sweet pairings on the Harrison counter">
+            <div>
+              <span>Hosting</span>
+              <h3>Wine & Hosting</h3>
+              <p>Plan a wine stop with sweets, candy, snacks, or small gathering extras.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/photos/optimized/reel-tequila-margarita-mix-720.webp" width="720" height="1280" decoding="async" alt="Tajin margarita mix limes and prepared glasses on the Harrison counter">
+            <div>
+              <span>Mixers</span>
+              <h3>Tequila & Mixers</h3>
+              <p>Pair tequila requests with mixer, citrus, soda, juice, and snack add-ons.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-section section-pad" id="arrivals" aria-labelledby="arrivals-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">New arrivals and requests</p>
+            <h2 id="arrivals-title">A better way to ask what is in.</h2>
+          </div>
+          <p>Use these examples to start a request. The store can confirm what is available today.</p>
+        </div>
+        <div class="product-grid" data-products>
+          <article class="product-card">
+            <img src="assets/photos/optimized/reel-counter-bottle-lineup-720.webp" width="720" height="840" decoding="async" alt="Premium bottles displayed on the Harrison counter">
+            <div>
+              <span>Premium & rare</span>
+              <h3>Counter Bottle Requests</h3>
+              <p>Use the request form for a specific brand, bottle size, flavor, or gift idea.</p>
+              <a class="text-link" href="#request">Request a bottle</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/photos/optimized/reel-wine-party-spread-720.webp" width="720" height="405" decoding="async" alt="Wine bottles and food-style add-ons arranged on the counter">
+            <div>
+              <span>New arrivals</span>
+              <h3>Wine Hosting Ideas</h3>
+              <p>Ask what wine and add-on items are available for a small dinner, gift, or gathering.</p>
+              <a class="text-link" href="#request">Ask about wine</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="premium-panel section-pad" id="premium" aria-labelledby="premium-title">
+        <div class="premium-copy">
+          <p class="eyebrow">Premium and rare</p>
+          <h2 id="premium-title">Looking for something specific?</h2>
+          <p>
+            For allocated, collectible, giftable, or higher-end bottles, send the exact name,
+            size, and when you need it. The site avoids live availability claims so the information stays accurate.
+          </p>
+          <a class="button secondary" href="#request">Send a product request</a>
+        </div>
+        <img src="assets/photos/optimized/reel-counter-bottle-lineup-1200.webp" width="1200" height="1400" decoding="async" alt="Bottle lineup on the Harrison counter with shelves behind it">
+      </section>
+
+      <section class="why-section section-pad" aria-labelledby="why-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Why customers stop in</p>
+            <h2 id="why-title">Prepared before you walk in.</h2>
+          </div>
+        </div>
+        <div class="reason-grid">
           <article>
             <span>01</span>
-            <h3>Bottle check</h3>
-            <p>Ask about a tequila, whiskey, vodka, rum, gin, brandy, or popular handle before you arrive.</p>
+            <h3>Call for quick checks</h3>
+            <p>Ask about a bottle, case, mixer, snack, or everyday item before making the trip.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Drink run</h3>
-            <p>Grab beer, seltzers, singles, cases, mixers, soda, juice, and ready-to-go drinks.</p>
+            <h3>Use the request form</h3>
+            <p>Send product questions, event needs, bulk requests, or feedback directly to the store email.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Counter picks</h3>
-            <p>Start with the bottle or beer you want, then add mixers, snacks, candy, or grocery basics.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Everyday pickup</h3>
-            <p>Lottery, candy, chips, soda, juice, convenience items, and last-minute essentials in one visit.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="pairing-strip section-pad" aria-label="Customer favorites and product requests">
-        <div class="section-heading">
-          <p class="eyebrow">Customer favorites</p>
-          <h2>What people stop in for at Harrison.</h2>
-        </div>
-        <p class="section-note">Real counter and reel shots, used as shopping examples. For a specific brand, size, flavor, case, mixer, or snack, send a request before you drive over.</p>
-        <div class="basket-grid">
-          <article>
-            <img src="assets/photos/reel-beer-tequila-snacks.jpg" alt="Beer tequila and snack pairing arranged on the Harrison counter">
-            <h3>Beer, tequila, snacks</h3>
-            <p>Quick runs often start with beer or a bottle, then chips, candy, soda, or another easy add-on.</p>
-            <a href="#request">Check a brand</a>
-          </article>
-          <article>
-            <img src="assets/photos/reel-tequila-margarita-mix.jpg" alt="Margarita mix limes ice and glassware arranged as a tequila pairing">
-            <h3>Mixers for the bottle</h3>
-            <p>Ask about tequila, margarita mix, citrus flavors, soda, juice, and snacks for a simple hosting stop.</p>
-            <a href="#request">Ask about mixers</a>
-          </article>
-          <article>
-            <img src="assets/photos/reel-counter-bottle-lineup.jpg" alt="Bottle lineup arranged at the counter with shelves behind it">
-            <h3>Bottle wall picks</h3>
-            <p>Looking for whiskey, tequila, vodka, rum, brandy, wine, or a premium bottle? Request a bottle check.</p>
-            <a href="#request">Check a bottle</a>
-          </article>
-          <article>
-            <img src="assets/photos/reel-ice-limes-mixers.jpg" alt="Bottle with ice limes and mixer setup for hosting">
-            <h3>Finish the stop</h3>
-            <p>Mixers, soda, juice, ice, snacks, candy, lottery, and grocery basics help complete the same trip.</p>
-            <a href="#request">Send your list</a>
+            <h3>Build a complete stop</h3>
+            <p>Pair drinks with mixers, candy, snacks, lottery, and convenience items when available.</p>
           </article>
         </div>
       </section>
 
       <section class="request-panel section-pad" id="request" aria-labelledby="request-title">
         <div class="request-copy">
-          <p class="eyebrow">Customer request form</p>
-          <h2 id="request-title">Need something specific? Send it straight to the store.</h2>
+          <p class="eyebrow">Request and feedback</p>
+          <h2 id="request-title">Ask before you make the trip.</h2>
           <p>
             Use this form for bottle checks, case requests, wine questions, mixer/snack requests,
             keg questions, customer feedback, and product suggestions.
           </p>
           <ul>
-            <li>Goes to: <strong>maanriyupatel@gmail.com</strong></li>
-            <li>Best for: product availability, shelf requests, and feedback</li>
+            <li>Goes to <strong>maanriyupatel@gmail.com</strong></li>
+            <li>Best for product availability, shelf requests, and feedback</li>
             <li>For urgent questions, call <a href="tel:+13133893759">(313) 389-3759</a></li>
           </ul>
         </div>
@@ -281,41 +371,7 @@
         </form>
       </section>
 
-      <section class="photo-band" id="photos" aria-label="Real store photos">
-        <figure class="photo-large">
-          <img src="assets/photos/brand-bottle-wall.jpg" alt="Counter shelves and spirits selection inside Harrison Liquor & Wine Market">
-          <figcaption>Spirits selection and counter shelves inside Harrison.</figcaption>
-        </figure>
-        <div class="photo-stack">
-          <figure>
-            <img src="assets/photos/brand-hero.jpg" alt="Store view from the counter inside Harrison Liquor & Wine Market">
-            <figcaption>Store view from the counter with shelves, product displays, and quick-pick items.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/photos/brand-convenience.jpg" alt="Snacks candy lottery and grocery basics inside the market">
-            <figcaption>Snacks, candy, lottery, and grocery basics.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="local-proof section-pad" aria-label="Local information">
-        <div>
-          <p class="eyebrow">Lincoln Park and Downriver</p>
-          <h2>Easy to reach, easy to shop.</h2>
-        </div>
-        <div>
-          <p>
-            Harrison Liquor & Wine Market serves Lincoln Park customers and nearby Downriver routes
-            from Allen Park, Southgate, Wyandotte, Dearborn, and Ecorse.
-          </p>
-          <p>
-            Search-friendly, customer-friendly, and simple: call ahead, send a request, or stop in
-            for liquor, wine, beer, mixers, snacks, lottery, and convenience basics.
-          </p>
-        </div>
-      </section>
-
-      <section class="visit section-pad" id="visit" aria-labelledby="visit-title">
+      <section class="visit section-pad" id="hours" aria-labelledby="visit-title">
         <div class="visit-card">
           <p class="eyebrow">Visit</p>
           <h2 id="visit-title">Harrison Liquor & Wine Market</h2>
@@ -324,7 +380,7 @@
             <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener"><span>Address</span><strong>735 Harrison Blvd, Lincoln Park, MI 48146</strong></a>
           </div>
         </div>
-        <aside class="hours-card" id="hours">
+        <aside class="hours-card">
           <h2>Hours</h2>
           <dl>
             <div><dt>Sunday-Thursday</dt><dd>10:00 AM-10:00 PM</dd></div>
@@ -336,21 +392,15 @@
 
       <section class="faq section-pad" aria-label="Frequently asked questions">
         <div class="section-heading">
-          <p class="eyebrow">Quick answers</p>
-          <h2>Before you head over.</h2>
+          <div>
+            <p class="eyebrow">Quick answers</p>
+            <h2>Before you head over.</h2>
+          </div>
         </div>
         <div class="faq-grid">
           <details>
             <summary>Can I request a product?</summary>
             <p>Yes. Use the request form to email the store a product name, size, quantity, and when you need it.</p>
-          </details>
-          <details>
-            <summary>What do you carry?</summary>
-            <p>Liquor, wine, cold beer, mixers, snacks, candy, lottery, grocery basics, and convenience items.</p>
-          </details>
-          <details>
-            <summary>Where is the store?</summary>
-            <p>735 Harrison Blvd, Lincoln Park, MI 48146.</p>
           </details>
           <details>
             <summary>What are the hours?</summary>
@@ -361,15 +411,22 @@
     </main>
 
     <footer>
-      <p>Harrison Liquor & Wine Market | 735 Harrison Blvd, Lincoln Park, MI 48146</p>
+      <div>
+        <strong>Harrison Liquor & Wine Market</strong>
+        <p>735 Harrison Blvd, Lincoln Park, MI 48146</p>
+      </div>
+      <div>
+        <a href="tel:+13133893759">Call</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
+        <a href="#request">Request</a>
+      </div>
       <p>Enjoy responsibly. Alcohol sales are for customers 21+ with valid ID.</p>
     </footer>
 
     <div class="mobile-actions" aria-label="Quick mobile actions">
       <a href="tel:+13133893759">Call</a>
-      <a href="#request">Request</a>
       <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
-      <a href="#hours">Hours</a>
+      <a href="#deals">Deals</a>
     </div>
 
     <script src="script.js" defer></script>
