@@ -6,9 +6,10 @@
     <priority>1.0</priority>
   </url>
   <url><loc>https://harrison-liquor-wine-market.vercel.app/deals.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://harrison-liquor-wine-market.vercel.app/liquor-wine.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://harrison-liquor-wine-market.vercel.app/tobacco-vape.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://harrison-liquor-wine-market.vercel.app/grocery-convenience.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://harrison-liquor-wine-market.vercel.app/liquor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://harrison-liquor-wine-market.vercel.app/tobacco.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://harrison-liquor-wine-market.vercel.app/vape.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://harrison-liquor-wine-market.vercel.app/grocery.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://harrison-liquor-wine-market.vercel.app/new-arrivals.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://harrison-liquor-wine-market.vercel.app/premium-rare.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://harrison-liquor-wine-market.vercel.app/about.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>

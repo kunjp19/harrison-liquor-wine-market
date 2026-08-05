@@ -4,6 +4,7 @@ const nav = document.querySelector(".nav");
 const requestForm = document.querySelector(".request-form");
 const requestEmail = "maanriyupatel@gmail.com";
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146";
+const dataVersion = "20260805-images";
 
 document.body.dataset.js = "true";
 
@@ -80,12 +81,13 @@ const renderCategories = (categories) => {
   if (!target || !Array.isArray(categories) || categories.length === 0) return;
 
   target.innerHTML = categories.map((category) => `
-    <article class="category-card">
+    <article class="department-card">
       ${cardImage(category, category.name)}
       <div>
-        <span>Browse</span>
+        <span>${escapeHtml(category.label || "Browse")}</span>
         <h3>${escapeHtml(category.name)}</h3>
         <p>${escapeHtml(category.description)}</p>
+        ${category.url ? `<a class="text-link" href="${escapeHtml(category.url)}">${escapeHtml(category.cta || `Browse ${category.name}`)}</a>` : ""}
       </div>
     </article>
   `).join("");
@@ -96,7 +98,7 @@ const renderProducts = (products) => {
   if (!target || !Array.isArray(products) || products.length === 0) return;
 
   target.innerHTML = products.map((product) => `
-    <article class="product-card">
+    <article class="mini-request-card">
       ${cardImage(product, product.name)}
       <div>
         <span>${escapeHtml(product.category)}</span>
@@ -115,9 +117,9 @@ const loadJson = async (path) => {
 };
 
 Promise.all([
-  loadJson("data/deals.json").then(renderDeals),
-  loadJson("data/categories.json").then(renderCategories),
-  loadJson("data/products.json").then(renderProducts)
+  loadJson(`data/deals.json?v=${dataVersion}`).then(renderDeals),
+  loadJson(`data/categories.json?v=${dataVersion}`).then(renderCategories),
+  loadJson(`data/products.json?v=${dataVersion}`).then(renderProducts)
 ]).catch(() => {
   // Fallback cards in the HTML stay visible if local JSON cannot be loaded.
 });
@@ -148,7 +150,7 @@ requestForm?.addEventListener("submit", (event) => {
   navigator.clipboard?.writeText(body).catch(() => {});
 
   if (status) {
-    status.textContent = `Opening email to ${requestEmail}. The request is copied in case the email app needs it pasted.`;
+    status.textContent = "Opening your email app with the request filled in. The request is copied in case the email app needs it pasted.";
   }
 
   window.dataLayer?.push({ event: "submit_product_inquiry", category });

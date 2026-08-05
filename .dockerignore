@@ -18,3 +18,10 @@ assets/*.DNG
 assets/*.HEIC
 assets/*.MP4
 assets/*.mov
+asset-approval.html
+assets/reel-review
+assets/photos/approved-sources
+assets/photos/approved-webp
+assets/photos/crop-candidates
+assets/photos/final
+assets/ai-product-candidates

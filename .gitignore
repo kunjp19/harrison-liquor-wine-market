@@ -1,3 +1,10 @@
 .DS_Store
 node_modules/
 .vercel
+asset-approval.html
+assets/reel-review/
+assets/photos/approved-sources/
+assets/photos/approved-webp/
+assets/photos/crop-candidates/
+assets/photos/final/
+assets/ai-product-candidates/

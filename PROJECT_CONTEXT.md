@@ -8,6 +8,9 @@
 - Do not make fake in-store backgrounds or show products as if they are guaranteed bundles.
 - Product/selection copy must be accurate to the image and phrased as examples or request ideas when availability can change.
 - Keep logo usage minimal.
+- Do not feature any AI-generated, sourced, or product-specific image on the public site until the user approves that exact image/use.
+- For cigarettes, the user has confirmed Marlboro and Newport as products to plan around. Ask before using any cigarette imagery or naming other cigarette brands.
+- For vape products, the user has confirmed Breeze and Geek Max as products to plan around. Ask before using any vape imagery or naming other vape brands.
 
 ## Verified Business Information
 
@@ -31,6 +34,7 @@
   - `assets/photos/reel-tequila-margarita-mix.jpg`
   - `assets/photos/reel-wine-party-spread.jpg`
 - Avoid raw reel frames with visible AI/social overlays unless cropped out.
+- AI-generated adult-product candidates live under `assets/ai-product-candidates/` for review only. Prefer the user-supplied real adult counter photos from IMG_2163, IMG_2164, and IMG_2165 for public adult-product sections.
 
 ## Design Principles
 

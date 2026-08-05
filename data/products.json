@@ -3,21 +3,28 @@
     "name": "Counter Bottle Requests",
     "category": "Liquor and premium",
     "description": "Use the request form for a specific brand, bottle size, flavor, or gift idea.",
-    "image": "assets/photos/optimized/reel-counter-bottle-lineup-720.webp",
-    "alt": "Premium bottles displayed on the Harrison counter"
+    "image": "assets/photos/final-webp/home-request-bottle-shelf-900.webp",
+    "alt": "Liquor bottles on a Harrison shelf for bottle request examples"
   },
   {
-    "name": "Tobacco and Vape Requests",
-    "category": "Adult-only products",
-    "description": "Ask about cigarette, tobacco, vape, and accessory categories. Products require applicable legal age and valid ID.",
-    "image": "assets/photos/optimized/brand-convenience-720.webp",
-    "alt": "Convenience shelves inside Harrison Liquor and Wine Market"
+    "name": "Breeze and Geek Max Requests",
+    "category": "Adult-only vape",
+    "description": "Ask about Breeze, Geek Max, Miami Mint, disposable devices, chargers, and vape accessories. Valid ID required.",
+    "image": "assets/photos/final-webp/home-request-vape-counter-900.webp",
+    "alt": "Adult vape counter display inside Harrison Liquor"
   },
   {
-    "name": "Grocery and Quick Basket Add-Ons",
+    "name": "Wraps and Tobacco Accessories",
+    "category": "Adult-only tobacco",
+    "description": "Ask about Honey Bourbon, Gelato, Purple, Milk N Cookies, Marlboro, Newport, rolling papers, lighters, and tobacco accessories. Valid ID required.",
+    "image": "assets/photos/final-webp/home-request-tobacco-shelf-900.webp",
+    "alt": "Adult tobacco and wrap shelf inside Harrison Liquor"
+  },
+  {
+    "name": "Snack and Drink Stop",
     "category": "Grocery and convenience",
-    "description": "Cold drinks, chips, candy, soda, grocery basics, and other practical extras for a quick stop.",
-    "image": "assets/photos/optimized/reel-quick-basket-picks-720.webp",
-    "alt": "Quick pickup basket with drinks and snacks"
+    "description": "Chips, candy, cold drinks, mixers, and everyday convenience items for the same visit.",
+    "image": "assets/photos/final-webp/home-request-grocery-basket-900.webp",
+    "alt": "Shopping basket with drinks and snacks near the checkout counter"
   }
 ]
