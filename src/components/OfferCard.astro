@@ -1,0 +1,14 @@
+---
+const { offer, className = "", label, detail = "Open offer" } = Astro.props;
+const typeClass = offer.category === "Beer" ? "beer-offer" : offer.category === "Snacks" ? "snack-offer" : offer.category === "Energy drinks" ? "drink-offer" : "";
+---
+<article class={`sale-offer-card ${typeClass} ${className}`.trim()}>
+  {offer.image && (
+    <img class={offer.imageFit === "contain" ? "offer-product-image" : ""} src={offer.image} width="900" height="506" loading="lazy" decoding="async" alt={offer.alt || `${offer.name} offer context inside Harrison Liquor`} />
+  )}
+  <span>{label || offer.category}</span>
+  <h2>{offer.name}</h2>
+  <strong>{offer.price}</strong>
+  <p>{offer.description}</p>
+  <a class="text-link" href={`/${offer.url}`}>{detail}</a>
+</article>

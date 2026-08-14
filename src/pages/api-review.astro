@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../components/BaseLayout.astro";
+import SimpleHeader from "../components/SimpleHeader.astro";
+import review from "../../data/weekly-api-review.json";
+---
+<BaseLayout title="Weekly API Review | Harrison Liquor" description="Owner review page for approving API-sourced website update candidates before anything is published." canonical="https://harrison-liquor-wine-market.vercel.app/api-review.html" robots="noindex, nofollow">
+  <SimpleHeader secondaryHref="/featured-offers.html" secondaryLabel="Offers" primaryHref="/index.html" primaryLabel="Home" />
+  <main>
+    <section class="page-hero review-hero">
+      <p class="eyebrow">Owner approval workflow</p>
+      <h1>Review API ideas before they touch the public website.</h1>
+      <p>This page is for weekly review. Product, shopping, grocery, alcohol, tobacco and vape data from APIs should stay as candidate material until you approve the exact result.</p>
+      <p class="approval-status"><strong>Current status:</strong> {review.currentApprovalStatus}</p>
+    </section>
+
+    <section class="review-policy section-pad" aria-labelledby="review-policy-title">
+      <div>
+        <p class="eyebrow">Publishing rule</p>
+        <h2 id="review-policy-title">Nothing goes live automatically.</h2>
+      </div>
+      <ul>
+        {review.policy.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+
+    <form class="api-review-grid section-pad" data-api-review-form data-review-email={review.reviewEmail}>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Weekly candidates</p>
+          <h2>Approve, reject, or correct each source.</h2>
+        </div>
+        <p>These are candidate API uses from Public APIs. Approving here means “test and prepare results for review,” not “publish automatically.”</p>
+      </div>
+
+      {review.candidates.map((candidate) => (
+        <article class="api-review-card" data-review-card={candidate.id}>
+          <span>{candidate.publicApisSource}</span>
+          <h3>{candidate.name}</h3>
+          <p class="decision-pill">{candidate.ownerDecision} · {candidate.decisionDate}</p>
+          <p><strong>Use:</strong> {candidate.proposedUse}</p>
+          <p><strong>Risk:</strong> {candidate.risk}</p>
+          <p>{candidate.approvalQuestion}</p>
+          <fieldset>
+            <legend>Decision</legend>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Approve testing" checked={candidate.ownerDecision?.startsWith("Approved")} /> <span>Approve testing</span></label>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Needs correction" /> <span>Needs correction</span></label>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Reject" /> <span>Reject</span></label>
+          </fieldset>
+          <label>
+            Notes
+            <textarea rows="3" placeholder="What should be changed, approved, or avoided?"></textarea>
+          </label>
+        </article>
+      ))}
+
+      <section class="conversion-band api-review-submit" aria-label="Send review decisions">
+        <div>
+          <p class="eyebrow">Send decisions</p>
+          <h2>Submit the weekly review choices.</h2>
+          <p data-api-review-status>Your choices will be prepared as an email to {review.reviewEmail} so the update list can be reviewed before publishing.</p>
+        </div>
+        <div class="conversion-actions">
+          <button class="button primary" type="submit">Submit Choices</button>
+          <a class="button secondary" href="/featured-offers.html">Back to Offers</a>
+        </div>
+        <textarea class="review-email-preview" rows="7" readonly hidden data-review-email-preview aria-label="Review email preview"></textarea>
+      </section>
+    </form>
+  </main>
+  <script src="/review-tools.js" defer></script>
+</BaseLayout>

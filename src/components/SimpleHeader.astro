@@ -1,0 +1,10 @@
+---
+const { primaryHref = "tel:+13133893759", primaryLabel = "Call", secondaryHref, secondaryLabel } = Astro.props;
+---
+<header class="simple-header">
+  <a class="brand-link" href="/index.html">Harrison Liquor</a>
+  <div>
+    {secondaryHref && secondaryLabel && <a class="button secondary" href={secondaryHref}>{secondaryLabel}</a>}
+    <a class="button primary" href={primaryHref}>{primaryLabel}</a>
+  </div>
+</header>

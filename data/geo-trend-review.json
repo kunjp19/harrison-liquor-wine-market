@@ -1,0 +1,69 @@
+{
+  "reviewEmail": "maanriyupatel@gmail.com",
+  "reviewCadence": "Weekly local marketing review",
+  "currentApprovalStatus": "All geo trend candidates approved for next test on 2026-08-14.",
+  "market": "Lincoln Park, MI and nearby Downriver shoppers",
+  "policy": [
+    "Weather cues can be public when they do not claim live inventory or pricing.",
+    "Search trend ideas must list the exact query, geo, date range, and source before public use.",
+    "Nearby event ideas must verify the event name, date, venue, and relevance before public use.",
+    "Product API ideas can guide wording, but never become store inventory claims without Harrison verification."
+  ],
+  "candidates": [
+    {
+      "id": "weather-stop-cues",
+      "name": "Weather-based stop prompts",
+      "source": "Open-Meteo",
+      "status": "Approved for testing",
+      "ownerDecision": "Approve next test",
+      "decisionDate": "2026-08-14",
+      "geo": "735 Harrison Blvd, Lincoln Park, MI",
+      "proposedUse": "Show warm, rainy, cold, or normal shopping cues on Mix & Match and Featured Offers.",
+      "reviewQuestion": "Keep weather cues live as long as they stay generic and do not claim inventory?"
+    },
+    {
+      "id": "beer-snack-searches",
+      "name": "Beer, snacks, and energy drink searches",
+      "source": "Google Trends alpha or maintained trends provider",
+      "status": "Approved for testing",
+      "ownerDecision": "Approve next test",
+      "decisionDate": "2026-08-14",
+      "geo": "Michigan / Detroit metro / Downriver when available",
+      "proposedUse": "Review weekly terms such as beer deals near me, energy drinks near Lincoln Park, snacks near me, and mix and match offers.",
+      "reviewQuestion": "Which search phrases should become SEO page copy or offer-page headings this week?"
+    },
+    {
+      "id": "adult-category-searches",
+      "name": "Adult category search watchlist",
+      "source": "Google Trends alpha or maintained trends provider",
+      "status": "Approved for testing",
+      "ownerDecision": "Approve next test",
+      "decisionDate": "2026-08-14",
+      "geo": "Michigan / Detroit metro / Downriver when available",
+      "proposedUse": "Review factual adult-only category terms such as Marlboro, Newport, Breeze, Geek Max, wraps, and accessories.",
+      "reviewQuestion": "Which adult-only search terms are accurate enough to mention with legal-age and valid-ID language?"
+    },
+    {
+      "id": "nearby-event-demand",
+      "name": "Nearby event demand",
+      "source": "Events APIs",
+      "status": "Approved for testing",
+      "ownerDecision": "Approve next test",
+      "decisionDate": "2026-08-14",
+      "geo": "Lincoln Park, Allen Park, Southgate, Wyandotte, Ecorse, Dearborn",
+      "proposedUse": "Prepare weekend prompts for verified nearby events that may increase demand for drinks, snacks, mixers, and quick convenience stops.",
+      "reviewQuestion": "Which verified local events are relevant enough to mention publicly?"
+    },
+    {
+      "id": "catalog-packaging-check",
+      "name": "Product catalog packaging check",
+      "source": "Food, grocery, and shopping APIs",
+      "status": "Approved for testing",
+      "ownerDecision": "Approve next test",
+      "decisionDate": "2026-08-14",
+      "geo": "Reference only",
+      "proposedUse": "Compare product naming and packaging before creating offer cards or department copy.",
+      "reviewQuestion": "Which catalog results match Harrison shelf photos or owner-approved products?"
+    }
+  ]
+}

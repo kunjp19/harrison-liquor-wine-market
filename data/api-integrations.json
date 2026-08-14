@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Open-Meteo",
+    "source": "public-apis Weather category",
+    "status": "used",
+    "reason": "No API key, HTTPS, CORS support, and useful enough for weather-aware store stop suggestions.",
+    "privacyNote": "Runs as an optional browser-side enhancement. The page still works without it."
+  },
+  {
+    "name": "Food, grocery, product catalog APIs",
+    "source": "public-apis Food & Drink and Shopping categories",
+    "status": "approved_for_testing",
+    "approvedDate": "2026-08-14",
+    "reason": "Owner approved testing product and shopping APIs as research sources. External grocery or product databases can help research product names and categories, but every result must still be checked against Harrison inventory before appearing on the public website."
+  },
+  {
+    "name": "Geocoding APIs",
+    "source": "public-apis Geocoding category",
+    "status": "not used",
+    "reason": "The store address and Google Maps link are already verified; adding live geocoding would add fragility without improving customers."
+  }
+]

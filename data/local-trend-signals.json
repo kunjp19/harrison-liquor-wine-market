@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Weather-driven demand",
+    "status": "live",
+    "source": "Open-Meteo",
+    "customerUse": "Adjust mix-and-match prompts for warm, cold, rainy, or normal Lincoln Park weather.",
+    "publishRule": "Safe to show because it does not claim product inventory or pricing."
+  },
+  {
+    "name": "Local search trends",
+    "status": "review_first",
+    "source": "Google Trends or maintained third-party trends APIs",
+    "customerUse": "Research rising local search interest around beer deals, energy drinks, snacks, tobacco, vape, mixers, and convenience stops.",
+    "publishRule": "Do not publish trend claims until the exact query, region, date range, and result are reviewed."
+  },
+  {
+    "name": "Nearby events",
+    "status": "review_first",
+    "source": "Events APIs",
+    "customerUse": "Prepare weekend/event shopping prompts when local activity could increase demand for beer, snacks, mixers, soft drinks, and convenience items.",
+    "publishRule": "Do not mention a specific event unless the event source, date, and relevance are verified."
+  },
+  {
+    "name": "Product catalog research",
+    "status": "approved_for_testing",
+    "source": "Food, grocery, and shopping APIs",
+    "customerUse": "Research product naming, packaging, and category wording before adding new offer or department content.",
+    "publishRule": "Never publish an API product result as store inventory until Harrison verifies it."
+  }
+]

@@ -1,0 +1,14 @@
+---
+const { title = "Confirm the offer, then head over.", eyebrow = "Before you visit" } = Astro.props;
+---
+<section class="conversion-band section-pad" aria-labelledby="offer-next-title">
+  <div>
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 id="offer-next-title">{title}</h2>
+  </div>
+  <div class="conversion-actions">
+    <a class="button primary" href="tel:+13133893759">Call Harrison</a>
+    <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
+    <a class="button ghost" href="/index.html#request">Request Product</a>
+  </div>
+</section>

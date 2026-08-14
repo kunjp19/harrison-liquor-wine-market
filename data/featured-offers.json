@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Rolling Rock",
+    "headline": "Rolling Rock 2 for $4.00",
+    "price": "2 for $4.00",
+    "category": "Beer",
+    "url": "rolling-rock-2-for-4.html",
+    "image": "/assets/product-offers/webp/rolling-rock-offer-900.webp",
+    "alt": "Rolling Rock beer can product image for Harrison Liquor 2 for 4 offer",
+    "imageFit": "contain",
+    "ageRestricted": true
+  },
+  {
+    "name": "Busch",
+    "headline": "Busch 2 for $4.00",
+    "price": "2 for $4.00",
+    "category": "Beer",
+    "url": "busch-2-for-4.html",
+    "image": "/assets/product-offers/webp/busch-offer-900.webp",
+    "alt": "Busch beer can product image for Harrison Liquor 2 for 4 offer",
+    "imageFit": "contain",
+    "ageRestricted": true
+  },
+  {
+    "name": "Better Made",
+    "headline": "Better Made 2 for $7.00",
+    "price": "2 for $7.00",
+    "category": "Snacks",
+    "url": "better-made-2-for-7.html",
+    "image": "/assets/product-offers/webp/better-made-offer-900.webp",
+    "alt": "Better Made Original potato chips bag product image for Harrison Liquor snack offer",
+    "imageFit": "contain",
+    "ageRestricted": false
+  },
+  {
+    "name": "Monster",
+    "headline": "Monster 2 for $5.50",
+    "price": "2 for $5.50",
+    "category": "Energy drinks",
+    "url": "monster-2-for-5-50.html",
+    "image": "/assets/product-offers/webp/monster-original-offer-900.webp",
+    "alt": "Monster Energy can product image for Harrison Liquor energy drink offer",
+    "imageFit": "contain",
+    "ageRestricted": false
+  },
+  {
+    "name": "Monster 24 fl oz",
+    "headline": "Monster 24 fl oz multi-buy offer",
+    "price": "$0.79 when buying at least 2",
+    "category": "Energy drinks",
+    "url": "monster-24oz-offer.html",
+    "image": "/assets/product-offers/webp/monster-24oz-offer-900.webp",
+    "alt": "Monster Energy 24 fluid ounce can product image for Harrison Liquor multi-buy offer",
+    "imageFit": "contain",
+    "ageRestricted": false
+  },
+  {
+    "name": "Red Bull",
+    "headline": "Red Bull 2 for $7.50",
+    "price": "2 for $7.50",
+    "category": "Energy drinks",
+    "url": "red-bull-2-for-7-50.html",
+    "image": "/assets/product-offers/webp/red-bull-offer-900.webp",
+    "alt": "Red Bull Energy Drink can product image for Harrison Liquor 2 for 7.50 offer",
+    "imageFit": "contain",
+    "ageRestricted": false
+  }
+]

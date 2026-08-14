@@ -1,0 +1,38 @@
+[
+  {
+    "product": "Rolling Rock",
+    "localImage": "/assets/product-offers/webp/rolling-rock-offer-900.webp",
+    "sourceUrl": "https://images.cdn.shoprite.com/zoom/00071439006017.jpg",
+    "usageNote": "Product pack shot used for offer card context. Confirm size and availability in store."
+  },
+  {
+    "product": "Busch",
+    "localImage": "/assets/product-offers/webp/busch-offer-900.webp",
+    "sourceUrl": "https://cdn.builder.io/api/v1/image/assets/47303b6c881d43a0b925e7fb37ae422e/39fa5a405ab24464ace5de79bc46a3ca",
+    "usageNote": "Product pack shot used for offer card context. Confirm size and availability in store."
+  },
+  {
+    "product": "Better Made",
+    "localImage": "/assets/product-offers/webp/better-made-offer-900.webp",
+    "sourceUrl": "https://www.kroger.com/product/images/large/front/0004163300142",
+    "usageNote": "Product pack shot used for offer card context. Confirm exact size and flavor in store."
+  },
+  {
+    "product": "Monster",
+    "localImage": "/assets/product-offers/webp/monster-original-offer-900.webp",
+    "sourceUrl": "https://m.media-amazon.com/images/I/41Z-XntOemL.jpg",
+    "usageNote": "Product pack shot used for offer card context. Confirm exact size and flavor in store."
+  },
+  {
+    "product": "Monster 24 fl oz",
+    "localImage": "/assets/product-offers/webp/monster-24oz-offer-900.webp",
+    "sourceUrl": "https://mobileimages.lowes.com/productimages/25514bac-9799-4f53-b1eb-e70a81d4ed9f/61349154.jpg?size=pdhism",
+    "usageNote": "Product pack shot used for offer card context. Confirm exact register details in store."
+  },
+  {
+    "product": "Red Bull",
+    "localImage": "/assets/product-offers/webp/red-bull-offer-900.webp",
+    "sourceUrl": "https://www.myamericanshop.it/cdn/shop/files/RedBull_5_4f0948e5-1b7c-4a3f-9a64-9b321c4a27bf.png?v=1778236334",
+    "usageNote": "Product pack shot used for offer card context. Confirm exact size and availability in store."
+  }
+]

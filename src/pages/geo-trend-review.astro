@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../components/BaseLayout.astro";
+import SimpleHeader from "../components/SimpleHeader.astro";
+import review from "../../data/geo-trend-review.json";
+---
+<BaseLayout title="Geo Trend Review | Harrison Liquor" description="Owner review page for local search, weather, event and API trend ideas before publishing them on the Harrison Liquor website." canonical="https://harrison-liquor-wine-market.vercel.app/geo-trend-review.html" robots="noindex, nofollow">
+  <SimpleHeader secondaryHref="/mix-and-match.html" secondaryLabel="Mix & Match" primaryHref="/index.html" primaryLabel="Home" />
+  <main>
+    <section class="page-hero review-hero">
+      <p class="eyebrow">Local growth workflow</p>
+      <h1>Approve local trend ideas before they become public copy.</h1>
+      <p>This page keeps geo-area ideas, public API signals, and weekly search opportunities in one place for owner review. The website can use live weather cues now, while product, search, and event claims stay private until verified.</p>
+      <p class="approval-status"><strong>Status:</strong> {review.currentApprovalStatus}</p>
+      <p class="approval-status"><strong>Market:</strong> {review.market}</p>
+    </section>
+
+    <section class="review-policy section-pad" aria-labelledby="geo-policy-title">
+      <div>
+        <p class="eyebrow">{review.reviewCadence}</p>
+        <h2 id="geo-policy-title">Use trends carefully, then publish confidently.</h2>
+      </div>
+      <ul>
+        {review.policy.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+
+    <form class="api-review-grid section-pad" data-api-review-form data-review-email={review.reviewEmail} data-review-subject="Harrison geo trend review decisions">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Review queue</p>
+          <h2>Choose what can move forward.</h2>
+        </div>
+        <p>Approving a card means it can be researched, drafted, or tested locally. It does not publish product availability, pricing, or event copy without another content check.</p>
+      </div>
+
+      {review.candidates.map((candidate) => (
+        <article class="api-review-card" data-review-card={candidate.id}>
+          <span>{candidate.source} · {candidate.status}</span>
+          <h3>{candidate.name}</h3>
+          <p class="decision-pill">{candidate.geo}</p>
+          <p><strong>Use:</strong> {candidate.proposedUse}</p>
+          <p>{candidate.reviewQuestion}</p>
+          <fieldset>
+            <legend>Decision</legend>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Approve next test" checked={candidate.ownerDecision === "Approve next test" || candidate.status === "Live" || candidate.status === "Approved for testing"} /> <span>Approve next test</span></label>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Keep researching" checked={candidate.status === "Review before publishing"} /> <span>Keep researching</span></label>
+            <label class="review-choice"><input type="radio" name={candidate.id} value="Reject" /> <span>Reject</span></label>
+          </fieldset>
+          <label>
+            Notes
+            <textarea rows="3" placeholder="Add approved search phrases, event names, product corrections, or anything to avoid."></textarea>
+          </label>
+        </article>
+      ))}
+
+      <section class="conversion-band api-review-submit" aria-label="Send geo trend review decisions">
+        <div>
+          <p class="eyebrow">Send decisions</p>
+          <h2>Email the weekly local trend choices.</h2>
+          <p data-api-review-status>Your choices will be prepared as an email to {review.reviewEmail}. Use this before turning trend ideas into public SEO sections.</p>
+        </div>
+        <div class="conversion-actions">
+          <button class="button primary" type="submit">Submit Choices</button>
+          <a class="button secondary" href="/mix-and-match.html">Back to Mix & Match</a>
+        </div>
+        <textarea class="review-email-preview" rows="7" readonly hidden data-review-email-preview aria-label="Geo trend review email preview"></textarea>
+      </section>
+    </form>
+  </main>
+  <script src="/review-tools.js" defer></script>
+</BaseLayout>

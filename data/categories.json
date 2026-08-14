@@ -1,56 +1,56 @@
 [
   {
     "name": "Liquor, Wine & Beer",
-    "label": "Liquor, wine and beer",
+    "label": "Shop",
     "description": "Spirits, wine, beer, ready-to-drink cans, mixers, and bottle requests for adult customers.",
     "image": "assets/photos/final-webp/home-dept-liquor-counter-900.webp",
-    "alt": "Liquor bottles and drink items arranged on the Harrison counter",
+    "alt": "Liquor bottles on the Harrison counter",
     "url": "liquor.html",
-    "cta": "Explore liquor"
+    "cta": "Shop liquor"
   },
   {
-    "name": "Cigarettes & Tobacco",
-    "label": "Cigarettes and tobacco",
+    "name": "Tobacco",
+    "label": "Adult ID required",
     "description": "Adult-only category information for Marlboro, Newport, tobacco wraps, rolling papers, lighters, and related accessories.",
     "image": "assets/photos/final-webp/home-dept-tobacco-shelf-900.webp",
-    "alt": "Adult tobacco and wrap shelves inside Harrison Liquor",
+    "alt": "Tobacco shelf inside Harrison Liquor",
     "url": "tobacco.html",
-    "cta": "Browse tobacco"
+    "cta": "Shop tobacco"
   },
   {
-    "name": "Vapes & Accessories",
-    "label": "Vapes and accessories",
+    "name": "Vape",
+    "label": "Adult ID required",
     "description": "Adult-only category information for Breeze, Geek Max, disposable vapes, chargers, and accessories.",
     "image": "assets/photos/final-webp/home-dept-vape-counter-900.webp",
-    "alt": "Vape product counter display inside Harrison Liquor",
+    "alt": "Vape counter display inside Harrison Liquor",
     "url": "vape.html",
-    "cta": "Browse vape products"
+    "cta": "Shop vape"
   },
   {
-    "name": "Grocery, Snacks & Convenience",
-    "label": "Grocery and convenience",
+    "name": "Snacks & Grocery",
+    "label": "Quick stop",
     "description": "Snacks, candy, soft drinks, energy drinks, grocery basics, lottery, mixers, and everyday convenience items.",
     "image": "assets/photos/final-webp/home-dept-grocery-snacks-900.webp",
-    "alt": "Snack shelves inside Harrison Liquor and Wine Market",
+    "alt": "Snack shelves inside Harrison Liquor",
     "url": "grocery.html",
-    "cta": "View grocery items"
+    "cta": "Shop snacks"
   },
   {
-    "name": "Deals & New Arrivals",
-    "label": "Deals and arrivals",
+    "name": "Deals",
+    "label": "Current features",
     "description": "Check current in-store features and ask what is new across drinks, tobacco, vape, grocery, and snacks.",
     "image": "assets/photos/final-webp/home-dept-deals-basket-900.webp",
-    "alt": "Basket with drinks and snacks as a quick store stop example",
+    "alt": "Basket with drinks and snacks",
     "url": "deals.html",
-    "cta": "View current deals"
+    "cta": "View deals"
   },
   {
-    "name": "Premium & Rare Products",
-    "label": "Premium and rare",
+    "name": "Premium Requests",
+    "label": "Special bottles",
     "description": "Ask about premium, allocated, collectible, gift-worthy, or special-occasion products before visiting.",
     "image": "assets/photos/final-webp/home-dept-premium-bottle-900.webp",
-    "alt": "Premium bottle and glass arranged on the Harrison counter",
+    "alt": "Premium bottle on the Harrison counter",
     "url": "premium-rare.html",
-    "cta": "Explore premium requests"
+    "cta": "Ask about premium"
   }
 ]

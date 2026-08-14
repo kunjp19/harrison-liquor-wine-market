@@ -1,0 +1,74 @@
+{
+  "reviewEmail": "maanriyupatel@gmail.com",
+  "reviewCadence": "Weekly before publishing",
+  "lastOwnerApprovalDate": "2026-08-14",
+  "currentApprovalStatus": "All listed candidates are owner-approved for testing. Public website content still requires store-specific verification before publishing.",
+  "policy": [
+    "No API result goes live without owner approval.",
+    "API-sourced product names, packaging, prices and availability must be checked against the store first.",
+    "Adult-only products must keep legal-age and valid-ID language.",
+    "Reject any source that changes brand packaging, invents inventory or suggests youth-focused language."
+  ],
+  "candidates": [
+    {
+      "id": "chomp-grocery",
+      "name": "Chomp grocery product API",
+      "category": "Food and grocery products",
+      "publicApisSource": "Food & Drink category",
+      "auth": "apiKey",
+      "ownerDecision": "Approved for testing",
+      "decisionDate": "2026-08-14",
+      "proposedUse": "Optional product-name lookup for snacks, grocery and non-age-restricted convenience items.",
+      "approvalQuestion": "Should we test this for snack/grocery product lookup only, with every result reviewed before publishing?",
+      "risk": "May return products, package names or descriptions that do not match Harrison inventory."
+    },
+    {
+      "id": "best-buy-shopping",
+      "name": "Best Buy product API",
+      "category": "Shopping catalog",
+      "publicApisSource": "Shopping category",
+      "auth": "apiKey",
+      "ownerDecision": "Approved for testing",
+      "decisionDate": "2026-08-14",
+      "proposedUse": "Reference-only catalog testing for broad product metadata patterns, not store inventory.",
+      "approvalQuestion": "Should this stay in research only unless a result clearly helps website structure?",
+      "risk": "Retailer catalog is not Harrison inventory and could mislead customers if published."
+    },
+    {
+      "id": "buywhere-shopping",
+      "name": "BuyWhere catalog API",
+      "category": "Shopping catalog",
+      "publicApisSource": "Shopping category",
+      "auth": "apiKey",
+      "ownerDecision": "Approved for testing",
+      "decisionDate": "2026-08-14",
+      "proposedUse": "Research possible product names or categories for review, not automatic website content.",
+      "approvalQuestion": "Should we test this only as a weekly candidate source for owner review?",
+      "risk": "Catalog data can be incomplete, region-specific or inaccurate for local store availability."
+    },
+    {
+      "id": "emailjs-request",
+      "name": "EmailJS",
+      "category": "Email workflow",
+      "publicApisSource": "Email category",
+      "auth": "apiKey",
+      "ownerDecision": "Approved for testing",
+      "decisionDate": "2026-08-14",
+      "proposedUse": "Upgrade the customer request form from mailto to direct website email delivery.",
+      "approvalQuestion": "Should we set up EmailJS so customer requests submit without opening the visitor email app?",
+      "risk": "Requires account setup and public client-side configuration; must be tested carefully."
+    },
+    {
+      "id": "open-meteo-weather",
+      "name": "Open-Meteo",
+      "category": "Weather",
+      "publicApisSource": "Weather category",
+      "auth": "none",
+      "ownerDecision": "Approved for testing",
+      "decisionDate": "2026-08-14",
+      "proposedUse": "Weather-aware shopping prompts on the offer page.",
+      "approvalQuestion": "Keep this live weather prompt on featured offers?",
+      "risk": "Low. Does not claim inventory or pricing and has a fallback."
+    }
+  ]
+}

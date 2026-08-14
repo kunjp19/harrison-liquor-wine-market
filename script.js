@@ -4,7 +4,7 @@ const nav = document.querySelector(".nav");
 const requestForm = document.querySelector(".request-form");
 const requestEmail = "maanriyupatel@gmail.com";
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146";
-const dataVersion = "20260805-images";
+const dataVersion = "20260814-department-cleanup";
 
 document.body.dataset.js = "true";
 
@@ -44,6 +44,28 @@ nav?.addEventListener("click", (event) => {
   if (event.target instanceof HTMLAnchorElement) {
     menuToggle?.setAttribute("aria-expanded", "false");
     document.body.dataset.menuOpen = "false";
+  }
+});
+
+const openHashDrawer = () => {
+  const id = window.location.hash.slice(1);
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (target instanceof HTMLDetailsElement) {
+    target.open = true;
+  } else {
+    target?.closest?.("details")?.setAttribute("open", "");
+  }
+};
+
+document.addEventListener("click", (event) => {
+  const link = event.target instanceof Element ? event.target.closest("a[href^='#']") : null;
+  if (!(link instanceof HTMLAnchorElement)) return;
+  const target = document.getElementById(link.hash.slice(1));
+  if (target instanceof HTMLDetailsElement) {
+    target.open = true;
+  } else {
+    target?.closest?.("details")?.setAttribute("open", "");
   }
 });
 
@@ -98,14 +120,11 @@ const renderProducts = (products) => {
   if (!target || !Array.isArray(products) || products.length === 0) return;
 
   target.innerHTML = products.map((product) => `
-    <article class="mini-request-card">
-      ${cardImage(product, product.name)}
-      <div>
-        <span>${escapeHtml(product.category)}</span>
-        <h3>${escapeHtml(product.name)}</h3>
-        <p>${escapeHtml(product.description)}</p>
-        <a class="text-link" href="#request">Request availability</a>
-      </div>
+    <article class="request-option-card">
+      <span>${escapeHtml(product.category)}</span>
+      <h3>${escapeHtml(product.name)}</h3>
+      <p>${escapeHtml(product.description)}</p>
+      <a class="text-link" href="#request">Request availability</a>
     </article>
   `).join("");
 };
@@ -123,6 +142,9 @@ Promise.all([
 ]).catch(() => {
   // Fallback cards in the HTML stay visible if local JSON cannot be loaded.
 });
+
+openHashDrawer();
+window.addEventListener("hashchange", openHashDrawer);
 
 document.querySelectorAll("a[href^='tel:']").forEach((link) => {
   link.addEventListener("click", () => {

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liquor Store in Lincoln Park, MI | Harrison Liquor & Wine Market</title>
-    <meta name="description" content="Visit Harrison Liquor & Wine Market at 735 Harrison Blvd in Lincoln Park, MI for liquor, wine, beer, tobacco, vape, snacks, grocery basics, lottery and deals.">
+    <title>Liquor Store, Mix & Match Offers in Lincoln Park, MI</title>
+    <meta name="description" content="Visit Harrison Liquor & Wine Market in Lincoln Park, MI for liquor, wine, beer, mix and match stops, tobacco, vape, snacks, grocery basics and deals.">
     <link rel="canonical" href="https://harrison-liquor-wine-market.vercel.app/">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Harrison Liquor & Wine Market in Lincoln Park, MI">
@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://harrison-liquor-wine-market.vercel.app/">
     <meta name="theme-color" content="#121715">
     <link rel="preload" as="image" href="assets/photos/final-webp/store-counter-hero-1200.webp" imagesrcset="assets/photos/final-webp/store-counter-hero-900.webp 720w, assets/photos/final-webp/store-counter-hero-1200.webp 1200w" imagesizes="100vw" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=20260805-seo">
+    <link rel="stylesheet" href="styles.css?v=20260812-strategy">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -54,6 +54,9 @@
         "hasMap": "https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146",
         "areaServed": ["Lincoln Park", "Allen Park", "Southgate", "Wyandotte", "Dearborn", "Ecorse"],
         "makesOffer": [
+          {"@type": "Offer", "name": "Mix and match store stop", "itemOffered": {"@type": "Service", "name": "Mix and match liquor, beer, snacks, mixers, tobacco, vape and convenience requests"}},
+          {"@type": "Offer", "name": "Beer, snacks and energy drink stop near Lincoln Park", "itemOffered": {"@type": "Service", "name": "Local beer, snack, energy drink and convenience shopping path"}},
+          {"@type": "Offer", "name": "Hosting and party supply stop", "itemOffered": {"@type": "Service", "name": "Liquor, wine, mixers, snacks and quick add-ons"}},
           {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Liquor and spirits"}},
           {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Wine"}},
           {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Cold beer"}},
@@ -100,6 +103,14 @@
               "@type": "Answer",
               "text": "Customers can shop for liquor, wine, cold beer, tobacco, vape products, mixers, snacks, candy, lottery, grocery basics, and convenience items."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Harrison Liquor offer mix and match shopping near Lincoln Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Customers can build a mix and match store stop with liquor, beer, ready-to-drink items, mixers, snacks, candy, grocery basics, and adult-only tobacco or vape categories where legally permitted. Availability and prices should be confirmed with the store."
+            }
           }
         ]
       }
@@ -122,6 +133,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
+        <a href="featured-offers.html">Offers</a>
         <a href="deals.html">Deals</a>
         <a href="liquor.html">Liquor</a>
         <a href="tobacco-vape.html">Tobacco & Vape</a>
@@ -133,19 +145,20 @@
       <a class="header-action" href="tel:+13133893759">Call</a>
     </header>
 
-    <main id="home">
+    <main id="home" class="home-page">
       <section class="seo-hero" aria-labelledby="hero-title">
         <div class="seo-hero-copy">
           <p class="eyebrow">Liquor store in Lincoln Park, Michigan</p>
           <h1 id="hero-title">Harrison Liquor &amp; Wine Market</h1>
           <p>
             Visit Harrison Liquor &amp; Wine Market at 735 Harrison Blvd for liquor, wine, beer,
-            tobacco, vape, snacks, candy, grocery basics, lottery, deals and quick product requests.
+            mix and match party stops, tobacco, vape, snacks, candy, grocery basics, lottery,
+            deals and quick product requests.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="tel:+13133893759">Call Now</a>
             <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Get Directions</a>
-            <a class="button ghost" href="#request">Request Product</a>
+            <a class="button ghost" href="mix-and-match.html">Mix &amp; Match</a>
           </div>
         </div>
         <figure class="seo-hero-photo">
@@ -157,7 +170,39 @@
         <a href="tel:+13133893759"><span>Call</span><strong>(313) 389-3759</strong></a>
         <a href="visit.html#hours"><span>Hours</span><strong>Sun-Thu 10-10, Fri-Sat 10-11</strong></a>
         <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener"><span>Address</span><strong>735 Harrison Blvd, Lincoln Park</strong></a>
-        <a href="deals.html"><span>Shop</span><strong>Deals and new arrivals</strong></a>
+        <a href="featured-offers.html"><span>Shop</span><strong>Featured offers and mix &amp; match</strong></a>
+      </section>
+
+      <section class="mission-grid section-pad" aria-labelledby="home-missions-title">
+        <div class="section-heading seo-heading">
+          <div>
+            <p class="eyebrow">Shop by mission</p>
+            <h2 id="home-missions-title">Choose the stop that matches your plan.</h2>
+          </div>
+          <p>Built for quick mobile browsing: start with the need, then call, request, or open the right local page.</p>
+        </div>
+        <article class="mission-card primary-offer"><span>Offer run</span><h3>Beer, snacks and energy drinks</h3><p>Check current Rolling Rock, Busch, Better Made, Monster and Red Bull offers before visiting.</p><a class="text-link" href="featured-offers.html">View offers</a></article>
+        <article class="mission-card"><span>Hosting</span><h3>Liquor, wine and mixers</h3><p>Ask about bottles, wine, ready-to-drink items, mixers, candy and quick party add-ons.</p><a class="text-link" href="liquor.html">Browse liquor</a></article>
+        <article class="mission-card"><span>Convenience</span><h3>Snacks, candy and grocery basics</h3><p>Make a fast Harrison Blvd stop for snacks, drinks, candy, mixers and everyday basics.</p><a class="text-link" href="grocery.html">View grocery</a></article>
+        <article class="mission-card adult-offer"><span>Adult-only</span><h3>Tobacco, vape and accessories</h3><p>Ask about approved adult-only categories including Marlboro, Newport, Breeze, Geek Max and wraps. Valid ID required.</p><a class="text-link" href="tobacco-vape.html">Browse adult categories</a></article>
+      </section>
+
+      <section class="featured-offers section-pad" id="featured-offers" aria-labelledby="featured-offers-title">
+        <div class="section-heading seo-heading">
+          <div>
+            <p class="eyebrow">Featured offers near Lincoln Park</p>
+            <h2 id="featured-offers-title">Posted store offers customers search for.</h2>
+          </div>
+          <p>These offers are converted from the current sale list into readable website cards. Prices and availability can change, so call before making a special trip.</p>
+        </div>
+        <div class="posted-offer-grid" aria-label="Current posted store offers">
+          <article class="sale-offer-card beer-offer"><img class="offer-product-image" src="assets/product-offers/webp/rolling-rock-offer-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Rolling Rock beer can product image for Harrison Liquor offer"><span>Beer offer</span><h3>Rolling Rock</h3><strong>2 for $4.00</strong><p>Rolling Rock offer near Lincoln Park. Alcohol requires valid ID.</p><a class="text-link" href="rolling-rock-2-for-4.html">View offer</a></article>
+          <article class="sale-offer-card beer-offer"><img class="offer-product-image" src="assets/product-offers/webp/busch-offer-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Busch beer can product image for Harrison Liquor offer"><span>Beer offer</span><h3>Busch</h3><strong>2 for $4.00</strong><p>Busch offer near Lincoln Park. Alcohol requires valid ID.</p><a class="text-link" href="busch-2-for-4.html">View offer</a></article>
+          <article class="sale-offer-card snack-offer"><img class="offer-product-image" src="assets/product-offers/webp/better-made-offer-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Better Made Original potato chips bag product image for Harrison Liquor snack offer"><span>Snack offer</span><h3>Better Made</h3><strong>2 for $7.00</strong><p>Better Made snack offer for a quick stop with drinks and convenience items.</p><a class="text-link" href="better-made-2-for-7.html">View offer</a></article>
+          <article class="sale-offer-card drink-offer"><img class="offer-product-image" src="assets/product-offers/webp/monster-original-offer-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Monster Energy can product image for Harrison Liquor energy drink offer"><span>Energy drink offer</span><h3>Monster</h3><strong>2 for $5.50</strong><p>Monster energy drink offer near Lincoln Park. Call to confirm current selection.</p><a class="text-link" href="monster-2-for-5-50.html">View offer</a></article>
+          <article class="sale-offer-card drink-offer"><img class="offer-product-image" src="assets/product-offers/webp/red-bull-offer-900.webp" width="900" height="506" loading="lazy" decoding="async" alt="Red Bull Energy Drink can product image for Harrison Liquor offer"><span>Energy drink offer</span><h3>Red Bull</h3><strong>2 for $7.50</strong><p>Red Bull multi-buy offer near Lincoln Park. Call to confirm current selection.</p><a class="text-link" href="red-bull-2-for-7-50.html">View offer</a></article>
+          <article class="sale-offer-card"><span>Mix and match</span><h3>Build a store stop</h3><strong>Call for today</strong><p>Pair beer, energy drinks, snacks, mixers and convenience items in one stop.</p><a class="text-link" href="mix-and-match.html">Mix &amp; match</a></article>
+        </div>
       </section>
 
       <section class="department-overview section-pad" id="categories" aria-labelledby="categories-title">
@@ -171,167 +216,175 @@
         <div class="department-grid" data-categories>
           <article class="department-card">
             <img src="assets/photos/final-webp/fallback-dept-liquor-counter-900.webp" width="900" height="506" decoding="async" alt="Liquor bottles and drink items arranged on the Harrison counter">
-            <div><span>Liquor, wine and beer</span><h3>Spirits, wine, cold beer and mixers</h3><p>Browse adult beverage categories and ask about sizes, cases, mixers, gifts or bottle requests.</p><a class="text-link" href="liquor.html">Explore liquor</a></div>
+            <div><span>Shop</span><h3>Liquor, Wine &amp; Beer</h3><p>Browse adult beverage categories and ask about sizes, cases, mixers, gifts or bottle requests.</p><a class="text-link" href="liquor.html">Shop liquor</a></div>
           </article>
           <article class="department-card">
-            <img src="assets/photos/final-webp/fallback-dept-tobacco-shelf-900.webp" width="900" height="506" decoding="async" alt="Adult tobacco and wrap shelves inside Harrison Liquor">
-            <div><span>Cigarettes and tobacco</span><h3>Marlboro, Newport, wraps and accessories</h3><p>Adult-only tobacco category information with valid ID required for eligible purchases.</p><a class="text-link" href="tobacco.html">Browse tobacco</a></div>
+            <img src="assets/photos/final-webp/fallback-dept-tobacco-shelf-900.webp" width="900" height="506" decoding="async" alt="Tobacco shelf inside Harrison Liquor">
+            <div><span>Adult ID required</span><h3>Tobacco</h3><p>Adult-only tobacco category information with valid ID required for eligible purchases.</p><a class="text-link" href="tobacco.html">Shop tobacco</a></div>
           </article>
           <article class="department-card">
-            <img src="assets/photos/final-webp/fallback-dept-vape-counter-900.webp" width="900" height="506" decoding="async" alt="Vape product counter display inside Harrison Liquor">
-            <div><span>Vapes and accessories</span><h3>Breeze, Geek Max and vape questions</h3><p>Adult-only vape category information for product requests and accessory questions.</p><a class="text-link" href="vape.html">Browse vape</a></div>
+            <img src="assets/photos/final-webp/fallback-dept-vape-counter-900.webp" width="900" height="506" decoding="async" alt="Vape counter display inside Harrison Liquor">
+            <div><span>Adult ID required</span><h3>Vape</h3><p>Adult-only vape category information for product requests and accessory questions.</p><a class="text-link" href="vape.html">Shop vape</a></div>
           </article>
           <article class="department-card">
-            <img src="assets/photos/final-webp/fallback-dept-grocery-snacks-900.webp" width="900" height="506" decoding="async" alt="Snack shelves inside Harrison Liquor and Wine Market">
-            <div><span>Grocery and convenience</span><h3>Snacks, candy, drinks and basics</h3><p>Make one quick neighborhood stop for snacks, drinks, candy, mixers and grocery basics.</p><a class="text-link" href="grocery.html">View grocery</a></div>
+            <img src="assets/photos/final-webp/fallback-dept-grocery-snacks-900.webp" width="900" height="506" decoding="async" alt="Snack shelves inside Harrison Liquor">
+            <div><span>Quick stop</span><h3>Snacks &amp; Grocery</h3><p>Make one quick neighborhood stop for snacks, drinks, candy, mixers and grocery basics.</p><a class="text-link" href="grocery.html">Shop snacks</a></div>
           </article>
         </div>
       </section>
 
-      <section class="local-search section-pad" aria-labelledby="local-title">
-        <div class="local-copy">
-          <p class="eyebrow">Local and easy to find</p>
-          <h2 id="local-title">A neighborhood liquor and convenience stop near Downriver shoppers.</h2>
-          <p>
-            Harrison Liquor &amp; Wine Market serves Lincoln Park and nearby Allen Park, Southgate,
-            Wyandotte, Ecorse and Dearborn customers who want a fast stop for drinks, tobacco,
-            vape, snacks and everyday convenience items.
-          </p>
-          <ul>
-            <li>Located at 735 Harrison Blvd, Lincoln Park, MI 48146</li>
-            <li>Open daily at 10 AM with later Friday and Saturday hours</li>
-            <li>Call ahead for current deals, new arrivals and product questions</li>
-          </ul>
-        </div>
-        <img src="assets/photos/final-webp/real-wide-store-polished-1200.webp" width="1200" height="900" decoding="async" alt="Wide interior view of Harrison Liquor and Wine Market in Lincoln Park">
-      </section>
-
-      <section class="deal-request-row section-pad" id="deals" aria-labelledby="deals-title">
-        <div class="deal-panel">
-          <p class="eyebrow">Deals and new arrivals</p>
-          <h2 id="deals-title">Check what is featured today.</h2>
-          <p>Deals and availability can change. Call the store or use the request form for current bottle, beer, wine, tobacco, vape, snack and grocery questions.</p>
-          <div class="inline-actions">
-            <a class="button primary" href="tel:+13133893759">Call for Deals</a>
-            <a class="button secondary" href="deals.html">View Deals Page</a>
+      <section class="home-more section-pad" aria-label="More store information">
+        <details class="home-drawer" id="deals">
+          <summary><span>Today's board</span><strong>Offers, arrivals, and requests</strong></summary>
+          <div class="deal-request-row compact-panel" aria-labelledby="deals-title">
+            <div class="deal-panel">
+              <p class="eyebrow">Deals and new arrivals</p>
+              <h2 id="deals-title">Check what is featured today.</h2>
+              <p>Deals and availability can change. Call the store or use the request form for current bottle, beer, wine, tobacco, vape, snack and grocery questions.</p>
+              <div class="inline-actions">
+                <a class="button primary" href="tel:+13133893759">Call for Deals</a>
+                <a class="button secondary" href="deals.html">View Deals Page</a>
+              </div>
+            </div>
+            <div class="request-preview request-options" data-products>
+              <article class="request-option-card">
+                <span>Liquor and premium</span><h3>Counter Bottle Requests</h3><p>Ask about a specific brand, size, flavor, case question, or gift idea.</p><a class="text-link" href="#request">Request availability</a>
+              </article>
+              <article class="request-option-card">
+                <span>Grocery and convenience</span><h3>Snack and Drink Stop</h3><p>Ask about drinks, candy, chips, mixers and everyday add-ons.</p><a class="text-link" href="#request">Request availability</a>
+              </article>
+            </div>
           </div>
-        </div>
-        <div class="request-preview" data-products>
-          <article class="mini-request-card">
-            <img src="assets/photos/final-webp/fallback-request-bottle-shelf-900.webp" width="900" height="506" decoding="async" alt="Liquor bottles on a Harrison shelf for bottle request examples">
-            <div><span>Liquor and premium</span><h3>Counter Bottle Requests</h3><p>Ask about a specific brand, size, flavor or gift idea.</p><a class="text-link" href="#request">Request availability</a></div>
-          </article>
-          <article class="mini-request-card">
-            <img src="assets/photos/final-webp/fallback-request-grocery-basket-900.webp" width="900" height="506" decoding="async" alt="Shopping basket with drinks and snacks near checkout">
-            <div><span>Grocery and convenience</span><h3>Snack and Drink Stop</h3><p>Ask about drinks, candy, chips, mixers and everyday add-ons.</p><a class="text-link" href="#request">Request availability</a></div>
-          </article>
-        </div>
-      </section>
+        </details>
 
-      <section class="age-note section-pad" aria-label="Age restricted product notice">
-        <strong>Age-restricted products</strong>
-        <p>Alcohol, tobacco, vape, and related products are available only to customers who meet applicable legal age requirements with valid ID. Product information is factual and not intended to encourage use by minors.</p>
-      </section>
+        <details class="home-drawer" id="request">
+          <summary><span>Ask the store</span><strong>Product request or feedback</strong></summary>
+          <div class="request-panel compact-panel" aria-labelledby="request-title">
+            <div class="request-copy">
+              <p class="eyebrow">Request and feedback</p>
+              <h2 id="request-title">Ask before you make the trip.</h2>
+              <p>
+                Use this form for bottle checks, case requests, wine questions, mixer/snack requests,
+                keg questions, customer feedback, and product suggestions.
+              </p>
+              <ul>
+                <li>Routes directly to the store request inbox</li>
+                <li>Best for product availability, shelf requests, and feedback</li>
+                <li>For urgent questions, call <a href="tel:+13133893759">(313) 389-3759</a></li>
+              </ul>
+            </div>
 
-      <section class="request-panel section-pad" id="request" aria-labelledby="request-title">
-        <div class="request-copy">
-          <p class="eyebrow">Request and feedback</p>
-          <h2 id="request-title">Ask before you make the trip.</h2>
-          <p>
-            Use this form for bottle checks, case requests, wine questions, mixer/snack requests,
-            keg questions, customer feedback, and product suggestions.
-          </p>
-          <ul>
-            <li>Routes directly to the store request inbox</li>
-            <li>Best for product availability, shelf requests, and feedback</li>
-            <li>For urgent questions, call <a href="tel:+13133893759">(313) 389-3759</a></li>
-          </ul>
-        </div>
-
-        <form class="request-form" data-form-kind="Harrison customer request">
-          <label>
-            Request category
-            <select name="Category" required>
-              <option value="">Choose one</option>
-              <option>Bottle availability</option>
-              <option>Beer, case, or drink request</option>
-              <option>Wine request</option>
-              <option>Mixer, snack, or grocery request</option>
-              <option>Keg question</option>
-              <option>Customer feedback</option>
-              <option>Website feedback</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <label>
-            Product, brand, or topic
-            <input name="Product or topic" type="text" autocomplete="off" placeholder="Example: Crown Royal Peach, Modelo case, website feedback" required>
-          </label>
-          <label>
-            Details
-            <textarea name="Details" rows="5" placeholder="Size, flavor, quantity, date needed, feedback, or anything helpful" required></textarea>
-          </label>
-          <div class="form-row">
-            <label>
-              Needed by
-              <input name="Needed by" type="text" autocomplete="off" placeholder="Tonight, Friday, this weekend">
-            </label>
-            <label>
-              Your name
-              <input name="Name" type="text" autocomplete="name" placeholder="Name">
-            </label>
+            <form class="request-form" data-form-kind="Harrison customer request">
+              <label>
+                Request category
+                <select name="Category" required>
+                  <option value="">Choose one</option>
+                  <option>Bottle availability</option>
+                  <option>Beer, case, or drink request</option>
+                  <option>Wine request</option>
+                  <option>Mixer, snack, or grocery request</option>
+                  <option>Keg question</option>
+                  <option>Customer feedback</option>
+                  <option>Website feedback</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Product, brand, or topic
+                <input name="Product or topic" type="text" autocomplete="off" placeholder="Example: Crown Royal Peach, Modelo case, website feedback" required>
+              </label>
+              <label>
+                Details
+                <textarea name="Details" rows="5" placeholder="Size, flavor, quantity, date needed, feedback, or anything helpful" required></textarea>
+              </label>
+              <div class="form-row">
+                <label>
+                  Needed by
+                  <input name="Needed by" type="text" autocomplete="off" placeholder="Tonight, Friday, this weekend">
+                </label>
+                <label>
+                  Your name
+                  <input name="Name" type="text" autocomplete="name" placeholder="Name">
+                </label>
+              </div>
+              <div class="form-row">
+                <label>
+                  Phone
+                  <input name="Phone" type="tel" autocomplete="tel" placeholder="Best number to reply">
+                </label>
+                <label>
+                  Email
+                  <input name="Customer email" type="email" autocomplete="email" placeholder="Your email, optional">
+                </label>
+              </div>
+              <button class="button primary" type="submit">Send email request</button>
+              <output class="form-status" aria-live="polite"></output>
+            </form>
           </div>
-          <div class="form-row">
-            <label>
-              Phone
-              <input name="Phone" type="tel" autocomplete="tel" placeholder="Best number to reply">
-            </label>
-            <label>
-              Email
-              <input name="Customer email" type="email" autocomplete="email" placeholder="Your email, optional">
-            </label>
-          </div>
-          <button class="button primary" type="submit">Send email request</button>
-          <output class="form-status" aria-live="polite"></output>
-        </form>
-      </section>
+        </details>
 
-      <section class="visit section-pad" id="hours" aria-labelledby="visit-title">
-        <div class="visit-card">
-          <p class="eyebrow">Visit</p>
-          <h2 id="visit-title">Harrison Liquor & Wine Market</h2>
-          <div class="contact-list">
-            <a href="tel:+13133893759"><span>Phone</span><strong>(313) 389-3759</strong></a>
-            <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener"><span>Address</span><strong>735 Harrison Blvd, Lincoln Park, MI 48146</strong></a>
+        <details class="home-drawer" id="hours">
+          <summary><span>Visit</span><strong>Hours, call, and directions</strong></summary>
+          <div class="visit compact-panel" aria-labelledby="visit-title">
+            <div class="visit-card">
+              <p class="eyebrow">Visit</p>
+              <h2 id="visit-title">Harrison Liquor & Wine Market</h2>
+              <div class="contact-list">
+                <a href="tel:+13133893759"><span>Phone</span><strong>(313) 389-3759</strong></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener"><span>Address</span><strong>735 Harrison Blvd, Lincoln Park, MI 48146</strong></a>
+              </div>
+            </div>
+            <aside class="hours-card">
+              <h2>Hours</h2>
+              <dl>
+                <div><dt>Sunday-Thursday</dt><dd>10:00 AM-10:00 PM</dd></div>
+                <div><dt>Friday-Saturday</dt><dd>10:00 AM-11:00 PM</dd></div>
+              </dl>
+              <p>Call to confirm holiday hours or special changes.</p>
+            </aside>
           </div>
-        </div>
-        <aside class="hours-card">
-          <h2>Hours</h2>
-          <dl>
-            <div><dt>Sunday-Thursday</dt><dd>10:00 AM-10:00 PM</dd></div>
-            <div><dt>Friday-Saturday</dt><dd>10:00 AM-11:00 PM</dd></div>
-          </dl>
-          <p>Call to confirm holiday hours or special changes.</p>
-        </aside>
-      </section>
+        </details>
 
-      <section class="faq section-pad" aria-label="Frequently asked questions">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Quick answers</p>
-            <h2>Before you head over.</h2>
+        <details class="home-drawer">
+          <summary><span>Store notes</span><strong>Location, ID policy, and FAQ</strong></summary>
+          <div class="local-search compact-panel" aria-labelledby="local-title">
+            <div class="local-copy">
+              <p class="eyebrow">Local and easy to find</p>
+              <h2 id="local-title">A neighborhood liquor and convenience stop near Downriver shoppers.</h2>
+              <p>
+                Harrison Liquor &amp; Wine Market serves Lincoln Park and nearby Allen Park, Southgate,
+                Wyandotte, Ecorse and Dearborn customers who want a fast stop for drinks, tobacco,
+                vape, snacks and everyday convenience items.
+              </p>
+              <ul>
+                <li>Located at 735 Harrison Blvd, Lincoln Park, MI 48146</li>
+                <li>Open daily at 10 AM with later Friday and Saturday hours</li>
+                <li>Call ahead for current deals, new arrivals and product questions</li>
+              </ul>
+            </div>
+            <img src="assets/photos/final-webp/real-wide-store-polished-1200.webp" width="1200" height="900" decoding="async" alt="Wide interior view of Harrison Liquor and Wine Market in Lincoln Park">
           </div>
-        </div>
-        <div class="faq-grid">
-          <details>
-            <summary>Can I request a product?</summary>
-            <p>Yes. Use the request form to email the store a product name, size, quantity, and when you need it.</p>
-          </details>
-          <details>
-            <summary>What are the hours?</summary>
-            <p>Sunday-Thursday 10:00 AM-10:00 PM. Friday-Saturday 10:00 AM-11:00 PM.</p>
-          </details>
-        </div>
+          <div class="age-note compact-note" aria-label="Age restricted product notice">
+            <strong>Age-restricted products</strong>
+            <p>Alcohol, tobacco, vape, and related products are available only to customers who meet applicable legal age requirements with valid ID. Product information is factual and not intended to encourage use by minors.</p>
+          </div>
+          <div class="faq compact-faq" aria-label="Frequently asked questions">
+            <div class="faq-grid">
+              <details>
+                <summary>Can I request a product?</summary>
+                <p>Yes. Use the request form to email the store a product name, size, quantity, and when you need it.</p>
+              </details>
+              <details>
+                <summary>What are the hours?</summary>
+                <p>Sunday-Thursday 10:00 AM-10:00 PM. Friday-Saturday 10:00 AM-11:00 PM.</p>
+              </details>
+              <details>
+                <summary>Can I build a mix and match stop?</summary>
+                <p>Yes. Use the mix and match page or request form for liquor, beer, ready-to-drink items, mixers, snacks, candy, grocery basics, tobacco, vape and accessory questions.</p>
+              </details>
+            </div>
+          </div>
+        </details>
       </section>
     </main>
 
@@ -349,11 +402,12 @@
     </footer>
 
     <div class="mobile-actions" aria-label="Quick mobile actions">
-      <a href="tel:+13133893759">Call</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
-      <a href="deals.html">Deals</a>
-    </div>
+        <a href="tel:+13133893759">Call</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
+        <a href="mix-and-match.html">Mix &amp; Match</a>
+        <a href="deals.html">Deals</a>
+      </div>
 
-    <script src="script.js?v=20260805-seo" defer></script>
+    <script src="script.js?v=20260812-strategy" defer></script>
   </body>
 </html>

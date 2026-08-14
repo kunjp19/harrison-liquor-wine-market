@@ -1,0 +1,29 @@
+---
+const {
+  title,
+  description,
+  canonical,
+  schema = [],
+  robots = "index, follow"
+} = Astro.props;
+
+const schemas = Array.isArray(schema) ? schema : [schema];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="robots" content={robots}>
+    <link rel="canonical" href={canonical}>
+    <link rel="stylesheet" href="/styles.css?v=20260812-astro">
+    {schemas.map((item) => (
+      <script type="application/ld+json" set:html={JSON.stringify(item)} />
+    ))}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
