@@ -11,8 +11,8 @@ const descriptions = {
   "Busch": "Posted beer offer at Harrison Liquor in Lincoln Park. Alcohol requires valid ID.",
   "Better Made": "Snack offer for a quick grocery, drink or convenience stop.",
   "Monster": "Energy drink offer near Lincoln Park. Call to confirm sizes and flavors.",
-  "Monster 24 fl oz": "Current sale list wording. Call to confirm exact register details.",
-  "Red Bull": "Posted Red Bull multi-buy offer near Lincoln Park."
+  "Monster 24 fl oz": "Sale-list wording. Call to confirm exact register details.",
+  "Red Bull": "Posted Red Bull offer near Lincoln Park."
 };
 
 const offers = offersJson.map((offer) => ({ ...offer, description: descriptions[offer.name] }));
@@ -38,7 +38,7 @@ const schema = [
         name: "Are Harrison Liquor offers live inventory?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. The offer page is based on the current posted store sale list. Prices, sizes and availability can change, so customers should call Harrison Liquor & Wine Market before making a special trip."
+          text: "No. The offer page is based on the current posted store sale list. Prices, sizes and availability may change, so customers should call Harrison Liquor & Wine Market before making a special trip."
         }
       },
       {
@@ -56,7 +56,7 @@ const schema = [
 const steps = [
   { title: "Pick the offer", copy: "Start with the beer, snack or energy drink item you came for." },
   { title: "Add the stop", copy: "Ask about mixers, candy, chips, grocery basics, tobacco, vape or accessories if needed." },
-  { title: "Confirm today", copy: "Call Harrison Liquor for current prices, sizes, flavors and availability." }
+  { title: "Confirm today", copy: "Call Harrison Liquor for current prices, sizes, flavors and availability before visiting." }
 ];
 ---
 <BaseLayout title="Weekly Store Offers in Lincoln Park, MI | Harrison Liquor" description="View weekly posted offers at Harrison Liquor in Lincoln Park, MI including beer, snacks, Monster, Red Bull and mix and match store stop ideas." canonical="https://harrison-liquor-wine-market.vercel.app/featured-offers.html" schema={schema}>
@@ -65,20 +65,20 @@ const steps = [
     <section class="page-hero offers-hero">
       <div>
         <p class="eyebrow">Weekly posted offers</p>
-        <h1>Current offers, cleaned up for fast shopping.</h1>
-        <p>Use this page to plan a quick Harrison Liquor stop near Lincoln Park. Offers are based on the current posted store sale list, then organized by beer, snacks, energy drinks and mix and match needs.</p>
+        <h1>Current offers for fast shopping.</h1>
+        <p>Use this page to plan a quick Harrison Liquor stop near Lincoln Park. Offers are based on the current posted store sale list, then organized by beer, snacks, energy drinks and mix-and-match needs.</p>
         <div class="hero-actions">
-          <a class="button primary" href="tel:+13133893759">Call to Confirm</a>
+          <a class="button primary" href="tel:+13133893759">Call Store</a>
           <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=735%20Harrison%20Blvd%2C%20Lincoln%20Park%2C%20MI%2048146" target="_blank" rel="noopener">Directions</a>
-          <a class="button ghost" href="/mix-and-match.html">Build a Stop</a>
+          <a class="button ghost" href="/mix-and-match.html">Build a stop</a>
         </div>
       </div>
       <aside class="offer-summary-card" aria-label="Offer page summary">
-        <img src="/assets/photos/final-webp/real-wide-store-polished-1200.webp" width="1200" height="900" decoding="async" alt="Wide interior view of Harrison Liquor and Wine Market in Lincoln Park" />
+        <img src="/assets/photos/final-webp/real-wide-store-polished-1200.webp" width="1200" height="900" decoding="async" alt="Wide interior view of Harrison Liquor & Wine Market in Lincoln Park" />
         <span>Offer board</span>
         <strong>Beer, snacks and energy drinks</strong>
         <p>735 Harrison Blvd, Lincoln Park, MI 48146</p>
-        <small>Call before visiting. Prices and availability can change.</small>
+        <small>Call before visiting. Prices and availability may change.</small>
       </aside>
     </section>
 
@@ -86,7 +86,7 @@ const steps = [
       <div class="section-heading">
         <div>
           <p class="eyebrow">Offer board</p>
-          <h2 id="offer-board-title">Posted deals people can scan in seconds.</h2>
+          <h2 id="offer-board-title">Posted deals customers can scan in seconds.</h2>
         </div>
         <p>Each card has one clear product, price and next action. Unverified sale-list items stay off the public board until the product name is confirmed.</p>
       </div>
@@ -96,7 +96,7 @@ const steps = [
           <figcaption>Quick drink and snack stop</figcaption>
         </figure>
         <figure>
-          <img src="/assets/photos/final-webp/counter-wall-store-context-1200.webp" width="1200" height="720" loading="lazy" decoding="async" alt="Counter shelves and product wall inside Harrison Liquor and Wine Market" />
+          <img src="/assets/photos/final-webp/counter-wall-store-context-1200.webp" width="1200" height="720" loading="lazy" decoding="async" alt="Counter shelves and product wall inside Harrison Liquor & Wine Market" />
           <figcaption>Counter and shelf selection</figcaption>
         </figure>
         <figure>
