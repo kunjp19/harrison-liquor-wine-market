@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/harrison_liquor_wine_market/",
+    "status": "verified_public_search_result",
+    "notes": "Used in sameAs structured data."
+  },
+  {
+    "name": "Facebook",
+    "url": null,
+    "status": "needs_owner_confirmation",
+    "notes": "Do not add a Facebook sameAs URL until the current page is confirmed. There may be an old page from the previous owner."
+  },
+  {
+    "name": "Google Business Profile",
+    "url": null,
+    "status": "needs_owner_action",
+    "notes": "Add the live website URL to the correct Google Business Profile and use the official review link when available."
+  }
+]

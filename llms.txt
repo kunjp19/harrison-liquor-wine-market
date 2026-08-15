@@ -1,0 +1,31 @@
+# Harrison Liquor & Wine Market
+
+Harrison Liquor & Wine Market is a neighborhood liquor, wine, beer, tobacco, vape, grocery, snacks, candy, lottery, deals, and convenience store in Lincoln Park, Michigan.
+
+Verified business facts:
+- Name: Harrison Liquor & Wine Market
+- Address: 735 Harrison Blvd, Lincoln Park, MI 48146
+- Phone: (313) 389-3759
+- Website: https://harrison-liquor-wine-market.vercel.app/
+- Hours: Sunday-Thursday 10:00 AM-10:00 PM; Friday-Saturday 10:00 AM-11:00 PM
+- Service area: Lincoln Park, Allen Park, Southgate, Wyandotte, Dearborn, and Ecorse
+
+Useful website pages:
+- Homepage: https://harrison-liquor-wine-market.vercel.app/
+- Featured offers: https://harrison-liquor-wine-market.vercel.app/featured-offers.html
+- Mix and match store stop: https://harrison-liquor-wine-market.vercel.app/mix-and-match.html
+- Liquor, wine, and beer: https://harrison-liquor-wine-market.vercel.app/liquor.html
+- Tobacco and vape: https://harrison-liquor-wine-market.vercel.app/tobacco-vape.html
+- Grocery and convenience: https://harrison-liquor-wine-market.vercel.app/grocery.html
+- Visit page: https://harrison-liquor-wine-market.vercel.app/visit.html
+- Sitemap: https://harrison-liquor-wine-market.vercel.app/sitemap.xml
+
+Customer actions:
+- Call the store for current prices, sizes, flavors, product availability, and holiday-hour changes.
+- Use the request form for bottle checks, case requests, wine questions, mixer/snack requests, keg questions, customer feedback, and product suggestions.
+- Alcohol, tobacco, vape, and related products require applicable legal age and valid ID.
+
+Important content rules:
+- Featured offers are based on posted store information and may change.
+- The website does not guarantee live inventory or pricing.
+- Adult product information is factual and not intended for minors.

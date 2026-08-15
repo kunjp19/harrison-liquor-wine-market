@@ -17,7 +17,7 @@ const copyAsset = async (asset) => {
 
 await mkdir(dist, { recursive: true });
 
-for (const name of ["data", "nginx", "styles.css", "script.js", "api-enhancements.js", "local-trends.js", "review-tools.js", "robots.txt", "sitemap.xml", "404.html", "health.html"]) {
+for (const name of ["data", "nginx", "styles.css", "script.js", "api-enhancements.js", "local-trends.js", "review-tools.js", "robots.txt", "sitemap.xml", "llms.txt", "404.html", "health.html"]) {
   await copyFile(name);
 }
 

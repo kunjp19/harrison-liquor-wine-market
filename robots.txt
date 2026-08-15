@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://harrison-liquor-wine-market.vercel.app/sitemap.xml
+Host: harrison-liquor-wine-market.vercel.app
