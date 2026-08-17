@@ -21,7 +21,7 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
     name: "Harrison Liquor Featured Store Offers",
-    url: "https://harrison-liquor-wine-market.vercel.app/featured-offers.html",
+    url: "https://harrisonliquorwinemarket.vercel.app/featured-offers.html",
     itemListElement: offers.map((offer) => ({
       "@type": "Offer",
       name: offer.headline,
@@ -59,7 +59,7 @@ const steps = [
   { title: "Confirm today", copy: "Call Harrison Liquor for current prices, sizes, flavors and availability before visiting." }
 ];
 ---
-<BaseLayout title="Weekly Store Offers in Lincoln Park, MI | Harrison Liquor" description="View weekly posted offers at Harrison Liquor in Lincoln Park, MI including beer, snacks, Monster, Red Bull and mix and match store stop ideas." canonical="https://harrison-liquor-wine-market.vercel.app/featured-offers.html" schema={schema}>
+<BaseLayout title="Weekly Store Offers in Lincoln Park, MI | Harrison Liquor" description="View weekly posted offers at Harrison Liquor in Lincoln Park, MI including beer, snacks, Monster, Red Bull and mix and match store stop ideas." canonical="https://harrisonliquorwinemarket.vercel.app/featured-offers.html" schema={schema}>
   <SimpleHeader secondaryHref="/mix-and-match.html" secondaryLabel="Mix & Match" />
   <main>
     <section class="page-hero offers-hero">

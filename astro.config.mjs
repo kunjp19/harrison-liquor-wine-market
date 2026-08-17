@@ -6,5 +6,5 @@ export default defineConfig({
   build: {
     format: "file"
   },
-  site: "https://harrison-liquor-wine-market.vercel.app"
+  site: "https://harrisonliquorwinemarket.vercel.app"
 });

@@ -8,7 +8,7 @@ Use this checklist when updating the website, Google Business Profile, Facebook,
 - Address: 735 Harrison Blvd, Lincoln Park, MI 48146
 - Phone: (313) 389-3759
 - Hours: Sunday-Thursday 10:00 AM-10:00 PM; Friday-Saturday 10:00 AM-11:00 PM
-- Website: https://harrison-liquor-wine-market.vercel.app/
+- Website: https://harrisonliquorwinemarket.vercel.app/
 
 ## Ranking Priorities
 
